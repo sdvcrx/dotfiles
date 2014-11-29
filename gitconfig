@@ -1,0 +1,15 @@
+[user]
+	name = banbanchs\n
+	email = memory.silentvoyage@gmail.com
+[core]
+    editor = vim
+[color]
+	ui = true
+[push]
+	default = simple
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	s = status
+	cm = commit
+[github]
+	user = banbanchs
