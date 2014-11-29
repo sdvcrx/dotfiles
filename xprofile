@@ -1,0 +1,22 @@
+#!/bin/sh
+
+#
+# ~/.xprofile
+#
+
+# xmodmap -e "pointer=1 2 3 6 7 4 5" # set mouse buttons up correctly
+# xsetroot -solid black              # sets the background to black
+
+#
+# Fcitx
+#
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+
+#
+# local
+#
+export LANG=zh_CN.UTF-8
+export LC_ALL="zh_CN.UTF-8"
+
