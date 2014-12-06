@@ -2,7 +2,7 @@
 	name = banbanchs\n
 	email = memory.silentvoyage@gmail.com
 [core]
-    editor = vim
+	editor = vim
 [color]
 	ui = true
 [push]
