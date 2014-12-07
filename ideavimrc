@@ -1,0 +1,3 @@
+syntax on
+inoremap jj <ESC>
+nnoremap ; :
