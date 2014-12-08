@@ -122,6 +122,7 @@ alias zeal='QT_HARFBUZZ=old zeal'
 alias pyunittest='python -m unittest discover -t '..''
 alias turnoffnv='sudo su -c "tee /proc/acpi/bbswitch <<<OFF"'
 alias mutt='TERM=screen-256color mutt'
+alias twitter='http_proxy="http://127.0.0.1:7777" twitter'
 
 # tmux and 256color
 alias tmux="tmux -2"
