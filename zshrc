@@ -43,7 +43,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git zsh-syntax-highlighting systemd)
+plugins=(git zsh-syntax-highlighting systemd sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,11 +118,12 @@ alias v.cdsitepackages='cdsitepackages'
 alias v.cd='cdvirtualenv'
 alias v.lssitepackages='lssitepackages'
 
-alias zeal='QT_HARFBUZZ=old zeal'
+# alias zeal='QT_HARFBUZZ=old zeal'
 alias pyunittest='python -m unittest discover -t '..''
 alias turnoffnv='sudo su -c "tee /proc/acpi/bbswitch <<<OFF"'
 alias mutt='TERM=screen-256color mutt'
 alias twitter='http_proxy="http://127.0.0.1:7777" twitter'
+alias px='proxychains4'
 
 # tmux and 256color
 alias tmux="tmux -2"
