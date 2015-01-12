@@ -7,8 +7,8 @@
 new_window "local"
 
 # Split window into panes.
-#split_v 50
 split_h 50
+split_v 50
 
 # Run commands.
 #run_cmd "top"     # runs in active pane
