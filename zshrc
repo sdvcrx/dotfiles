@@ -54,7 +54,6 @@ export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/us
 # .bashrc
 export CLICOLOR="true"
 export EDITOR="/usr/bin/vim -p -X" visudo
-export PAGER="most"
 export GIT_EDITOR="vim"
 
 # keybind
