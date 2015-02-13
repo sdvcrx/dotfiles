@@ -77,7 +77,25 @@ function psgrep(){
     ps axu | ag $1
 }
 
-# alias
+# virtualenvwrapper
+function loadv() {
+    export WORKON_HOME=$HOME/.virtualenvs
+    source virtualenvwrapper.sh
+    alias v='workon'
+    alias v.deactivate='deactivate'
+    alias v.mk='mkvirtualenv --no-site-packages'
+    alias v.mk_withsitepackages='mkvirtualenv'
+    alias v.rm='rmvirtualenv'
+    alias v.switch='workon'
+    alias v.add2virtualenv='add2virtualenv'
+    alias v.cdsitepackages='cdsitepackages'
+    alias v.cd='cdvirtualenv'
+    alias v.lssitepackages='lssitepackages'
+    workon $1
+}
+
+
+#======== Alias =============#
 alias Ctags='ctags -R -f .'
 
 alias ll='ls -hl --color=auto'
@@ -102,20 +120,6 @@ alias ag='ag -i --color-match "1;32"'
 
 # vbox
 alias vboxload='sudo modprobe vboxdrv vboxpci vboxnetflt vboxpci'
-
-# virtualenv
-export WORKON_HOME=$HOME/.virtualenvs
-source virtualenvwrapper.sh
-alias v='workon'
-alias v.deactivate='deactivate'
-alias v.mk='mkvirtualenv --no-site-packages'
-alias v.mk_withsitepackages='mkvirtualenv'
-alias v.rm='rmvirtualenv'
-alias v.switch='workon'
-alias v.add2virtualenv='add2virtualenv'
-alias v.cdsitepackages='cdsitepackages'
-alias v.cd='cdvirtualenv'
-alias v.lssitepackages='lssitepackages'
 
 # alias zeal='QT_HARFBUZZ=old zeal'
 alias pyunittest='python -m unittest discover -t '..''
