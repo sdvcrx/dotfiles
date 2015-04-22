@@ -131,9 +131,11 @@ if [ "$COLORTERM" = "lilyterm" ]; then
     export TERM=screen-256color
 fi
 
-# source ~/.oh-my-zsh/z/z.sh
 # fasd
 eval "$(fasd --init auto)"
 alias vi='f -e vim'
-alias m='f -e mpv'
 unset GREP_OPTIONS
+
+# nodejs
+# phantomjs
+export PHANTOMJS_CDNURL=http://cnpmjs.org/downloads
