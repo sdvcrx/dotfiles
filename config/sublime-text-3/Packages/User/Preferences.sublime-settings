@@ -1,0 +1,22 @@
+{
+	"caret_style": "phase",
+	"color_scheme": "Packages/Gutter Color/Monokai.gcfix.tmTheme",
+	"font_face": "YaHei Consolas Hybrid",
+	"font_size": 11,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage",
+		"Arduino-like IDE",
+		"Github Tools"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"margin": 4,
+	"tab_size": 2,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"update_check": false,
+	"vintageous_reset_mode_when_switching_tabs": false,
+	"word_wrap": true
+}
