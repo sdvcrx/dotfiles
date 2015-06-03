@@ -30,13 +30,43 @@ browser = firefox
 #modify_other_keys = false
 
 [colors]
-cursor = #D5D5D5
-foreground = #E6E6E6
+[colors]
+# Base16 Monokai
+# Scheme: Wimer Hazenberg (http://www.monokai.nl)
+
+foreground      = #e1e1da
 foreground_bold = #ffffff
-background = #000000
+cursor          = #f8f8f2
+background      = #272822
+
+# 16 color space
+color0 = #272822
+color8 = #272822
+
+color1 = #f92672
+color9 = #f92672
+
+color2 = #a6e22e
+color10 = #a6e22e
+
+color3 = #fd971f
+color11 = #fd971f
+
+color4 = #ae81ff
+color12 = #ae81ff
+
+color5 = #fe558a
+color13 = #fe558a
+
+color6 = #66d9ef
+color14 = #66d9ef
+
+color7 = #f8f8f0
+color15 = #f8f8f0
+
 
 # 10% background transparency (requires a compositor)
-background = rgba(0, 0, 0, 0.9)
+background = rgba(0, 0, 0, 0.95)
 
 # if unset, will reverse foreground and background
 # highlight = #2f2f2f
