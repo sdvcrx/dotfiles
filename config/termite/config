@@ -5,7 +5,8 @@ audible_bell = false
 mouse_autohide = true
 allow_bold = true
 dynamic_title = true
-urgent_on_bell = true
+urgent_on_bell = false
+visible_bell = false
 clickable_url = true
 font = Ubuntu Mono derivative Powerline 12
 scrollback_lines = 3000
@@ -20,7 +21,7 @@ cursor_blink = on
 cursor_shape = block
 
 # $BROWSER is used by default
-browser = google-chrome-stable
+browser = firefox
 
 # set size hints for the window
 #size_hints = false
