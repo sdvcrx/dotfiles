@@ -131,6 +131,10 @@ if [ "$COLORTERM" = "lilyterm" ]; then
     export TERM=screen-256color
 fi
 
+if [[ $TERM == xterm-termite  ]]; then
+    export TERM=xterm-256color
+fi
+
 # fasd
 eval "$(fasd --init auto)"
 alias vi='f -e vim'
