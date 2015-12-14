@@ -1,4 +1,6 @@
 [Appearance]
+AntiAliasFonts=true
+BoldIntense=true
 ColorScheme=Monokai
 Font=Ubuntu Mono derivative Powerline,12,-1,5,50,0,0,0,0,0
 

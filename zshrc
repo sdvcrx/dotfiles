@@ -143,3 +143,9 @@ unset GREP_OPTIONS
 # nodejs
 # phantomjs
 export PHANTOMJS_CDNURL=http://cnpmjs.org/downloads
+
+# i3
+export TERMINAL=konsole
+
+# ssh agent
+eval "$(envoy -p)"
