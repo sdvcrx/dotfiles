@@ -149,3 +149,12 @@ export TERMINAL=konsole
 
 # ssh agent
 eval "$(envoy -p)"
+
+# fzf
+fe() {
+  IFS='
+'
+  local declare files=($(fzf --query="$1" --select-1 --exit-0))
+  [[ -n "$files" ]] && vim "${files[@]}"
+  unset IFS
+}
