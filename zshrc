@@ -117,7 +117,7 @@ export MANPAGER="/usr/bin/most -s"
 alias ag='ag -i --color-match "1;32"'
 
 # vbox
-alias vboxload='sudo modprobe vboxdrv vboxpci vboxnetflt vboxpci'
+alias vboxload='sudo modprobe vboxdrv vboxpci vboxnetflt vboxnetadp'
 
 # alias zeal='QT_HARFBUZZ=old zeal'
 alias turnoffnv='sudo su -c "tee /proc/acpi/bbswitch <<<OFF"'
