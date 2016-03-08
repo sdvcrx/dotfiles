@@ -155,6 +155,6 @@ fe() {
   IFS='
 '
   local declare files=($(fzf --query="$1" --select-1 --exit-0))
-  [[ -n "$files" ]] && vim "${files[@]}"
+  [[ -n "$files" ]] && nvim "${files[@]}"
   unset IFS
 }
