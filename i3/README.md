@@ -1,3 +1,3 @@
 ## Requirement ##
 
-    sudo pacman -S i3-wm i3lock conky compton dmenu xorg-xrandr feh fcitx ttf-ubuntu-font-family
+    sudo pacman -S i3-gaps-next-git i3lock i3status i3-blocks-gaps-git conky compton pavucontrol xtitle dmenu xorg-xrandr feh fcitx ttf-ubuntu-font-family ttf-font-awesome

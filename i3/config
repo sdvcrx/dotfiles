@@ -45,6 +45,37 @@ bindsym $mod+d exec dmenu_run -fn  "-*-anorexia-medium-*-*-*-11-*-*-*-*-*-*-*" -
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+
+set $default_gaps_inner 7
+set $default_gaps_outer 3
+gaps inner $default_gaps_inner
+gaps outer $default_gaps_outer
+
+smart_gaps on
+smart_borders on
+
+
+# Color
+
+set $black       #212121
+set $darkblack   #000000
+set $red         #fb4934
+set $darkred     #cc241d
+set $green       #b8bb26
+set $darkgreen   #98971a
+set $yellow      #fabd2f
+set $darkyellow  #d79921
+set $blue        #83a598
+set $darkblue    #458588
+set $magenta     #d3869b
+set $darkmagenta #b16286
+set $cyan        #8ec07c
+set $darkcyan    #689d6a
+set $white       #ebdbb2
+set $darkwhite   #a89984
+# set $background  #000000
+set $transparent #1d202190
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -124,30 +155,44 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+set $mode_power <span>        </span><span background='#fabd2f' foreground='#000000'> power </span> <span foreground='#ebdbb2'>l</span>ock <span foreground='#ebdbb2'>e</span>xit <span foreground='#ebdbb2'>s</span>uspend <span foreground='#ebdbb2'>r</span>eboot <span foreground='#ebdbb2'>p</span>oweroff
+mode --pango_markup "$mode_power" {
+    bindsym l mode "default", exec --no-startup-id $HOME/.i3/i3exit lock
+    bindsym e mode "default", exec --no-startup-id $HOME/.i3/i3exit logout
+    bindsym s mode "default", exec --no-startup-id $HOME/.i3/i3exit suspend
+    bindsym h mode "default", exec --no-startup-id $HOME/.i3/i3exit hibernate
+    bindsym r mode "default", exec --no-startup-id $HOME/.i3/i3exit reboot
+    bindsym p mode "default", exec --no-startup-id $HOME/.i3/i3exit shutdown
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Control+l mode "$mode_power"
+bindsym Mod1+Control+l mode "$mode_power"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+    # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+    # Pressing left will shrink the window’s width.
+    # Pressing right will grow the window’s width.
+    # Pressing up will shrink the window’s height.
+    # Pressing down will grow the window’s height.
+    bindsym h resize shrink width 10 px or 10 ppt
+    bindsym j resize grow height 10 px or 10 ppt
+    bindsym k resize shrink height 10 px or 10 ppt
+    bindsym l resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+    # same bindings, but for the arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -155,20 +200,35 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command ~/.i3/conky.sh
-        position top
-        mode dock
-        font pango: Ubuntu Mono 10
+    # verbose yes
+    status_command i3blocks
+    i3bar_command i3bar -t
+    position top
+    # mode dock
+    # font pango: Ubuntu Mono 11
+    font pango: Ubuntu Mono, FontAwesome 11
 
-        colors {
-                background #303030
-                statusline #ffffff
+    strip_workspace_numbers yes
+    separator_symbol "■"
+    bindsym button4 nop
+    bindsym button5 nop
+    tray_output HDMI1
+    tray_output LVDS1
+    tray_padding 0
+    height 30
 
-                focused_workspace  #4c7899 #285577 #ffffff
-                active_workspace   #333333 #5f676a #ffffff
-                inactive_workspace #333333 #222222 #888888
-                urgent_workspace   #2f343a #900000 #ffffff
-        }
+    colors {
+        background          $transparent
+        statusline          $white
+        separator            $yellow
+
+        #                   BORDER       BACKGROUND   TEXT
+        focused_workspace   $transparent $transparent $yellow
+        active_workspace    $transparent $transparent $white
+        inactive_workspace  $transparent $transparent $white
+        urgent_workspace    $darkred     $darkred     $transparent
+        binding_mode        $transparent $transparent $yellow
+    }
 }
 
 # borders
@@ -179,18 +239,18 @@ hide_edge_borders both
 new_window pixel
 
 # KDE lockscreen
-bindsym Control+$mod+l exec i3lock
+# bindsym Control+$mod+l exec i3lock
 
 # From dotit
 
 # colors
 #
-#class                  border   backgr.  text
-client.focused          #121212 #101010 #9e8a8e
-client.focused_inactive #101010 #191919 #999999
-client.unfocused        #101010 #191919 #999999
-client.urgent           #cd989a #cd989a #2e3436
-client.background       #1d1d1d
+#                       BORDER      BACKGROUND  TEXT   INDICATOR   CHILD_BORDER
+client.focused          $yellow     $yellow     $black $yellow     $yellow
+client.focused_inactive $black      $black      $white $black      $darkyellow
+client.unfocused        $black      $black      $white $black      $darkyellow
+client.urgent           $darkred    $darkred    $black $darkred    $darkred
+client.background       $black
 
 # Window rules
 for_window [class="mpv"] floating enable, move container to workspace 5
