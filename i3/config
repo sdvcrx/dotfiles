@@ -259,7 +259,13 @@ for_window [class="VirtualBox"] floating enable
 for_window [class="Dolphin"] floating enable
 for_window [class="Zeal"] floating enable
 for_window [class="Altyo"] floating enable
+for_window [class="telegram-desktop"] floating enable border none
+for_window [class="Showimage"] floating enable
+for_window [class="Zathura"] floating enable
 for_window [class="Firefox" instance="Places"] floating enable
+for_window [class="Android SDK Manager"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [instance="QQ.exe"] floating enable border none
 
 # Exec
 exec --no-startup-id /home/memory/.i3/autostart.sh
