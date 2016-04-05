@@ -26,6 +26,12 @@ signal=1
 markup=pango
 border=#cc241d
 
+[memory]
+label=
+command=/usr/libexec/i3blocks/memory
+interval=30
+border=#ebdbb2
+
 [brightness]
 label=    
 command=printf "%.0f " $(xbacklight -get)
@@ -52,7 +58,7 @@ border=#458588
 
 [time]
 label=    
-command=echo "`date +'%a %b %d'` <b>`date +'%T'`</b> "; [[ -z "${BLOCK_BUTTON}" ]] || gsimplecal &
+command=echo "`date +'%a %b %d'` <b>`date +'%R'`</b> "
 interval=30
 markup=pango
 border=#928374
