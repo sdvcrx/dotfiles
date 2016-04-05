@@ -1,0 +1,24 @@
+"*":
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    disabledPackages: [
+      "atom-ternjs"
+    ]
+  editor:
+    backUpBeforeSaving: true
+    fontSize: 15
+    invisibles: {}
+  emmet: {}
+  "exception-reporting":
+    userId: "6d3f6a12-9dca-25fa-d8d5-73f8e0378189"
+  "highlight-selected": {}
+  linter:
+    lintOnFly: false
+  minimap:
+    absoluteMode: true
+  "vim-mode":
+    useClipboardAsDefaultRegister: false
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
