@@ -1,6 +1,7 @@
 [user]
 	name = banbanchs\n
 	email = memory.silentvoyage@gmail.com
+	signingkey = 70854AC3
 [core]
 	editor = vim
 [color]
