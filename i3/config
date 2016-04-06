@@ -266,6 +266,8 @@ for_window [class="Firefox" instance="Places"] floating enable
 for_window [class="Android SDK Manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [instance="QQ.exe"] floating enable border none
+for_window [class="Genymotion"] floating enable
+for_window [class="Genymotion Player"] floating enable
 
 # Exec
 exec --no-startup-id /home/memory/.i3/autostart.sh
