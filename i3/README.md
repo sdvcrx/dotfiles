@@ -1,6 +1,6 @@
 ## Requirement ##
 
-    yaourt -S i3-gaps-next-git i3lock i3status i3-blocks-gaps-git conky compton-git pavucontrol xtitle dmenu feh fcitx ttf-ubuntu-font-family ttf-font-awesome
+    yaourt -S i3-gaps-next-git i3lock i3status i3-blocks-gaps-git conky compton-git pavucontrol xtitle rofi feh fcitx ttf-ubuntu-font-family ttf-font-awesome
 
 ### Generate screen layout ###
 
