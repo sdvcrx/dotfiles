@@ -19,3 +19,20 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
+'.text.html.vue':
+  'Vue component':
+    'prefix': 'vcompent'
+    'body': """
+    <template>
+    </template>
+
+    <script>
+
+    export default {
+      name: '$1'
+    }
+    </script>
+
+    <style lang="scss">
+    </style>
+    """
