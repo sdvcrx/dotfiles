@@ -30,11 +30,24 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+# vim-mode
 'atom-text-editor.vim-mode.insert-mode':
   'j j': 'vim-mode:activate-normal-mode'
 
-'atom-text-editor.vim-mode:not(.insert-mode)':
+'atom-text-editor.vim-mode':
   'ctrl-c': 'core:copy'
+
+# vim-mode-plus
+'atom-text-editor.vim-mode-plus.insert-mode':
+  'j j': 'vim-mode-plus:activate-normal-mode'
+
+'atom-text-editor.vim-mode-plus':
+  'ctrl-c': 'core:copy'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+  ';': 'vim-mode-plus-ex-mode:open'
+  '!': 'vim-mode-plus-ex-mode:toggle-setting'
 
 'atom-text-editor[data-grammar="source js jsx"]:not([mini])':
   'tab': 'emmet:expand-abbreviation-with-tab'
