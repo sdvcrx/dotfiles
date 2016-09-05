@@ -46,7 +46,8 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # start rofi (a window switcher and program launcher)
-exec --no-startup-id rofi -key-run Alt-F2 -key-window SuperL-d
+# exec --no-startup-id rofi -key-run Alt-F2 -key-window SuperL-d
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 
 set $default_gaps_inner 7
