@@ -1,7 +1,26 @@
+#!/bin/env bash
+
+screen_sh="`pwd`/screen.sh"
+
+if [ -f "$screen_sh" ]; then
+    sh "$screen_sh"
+fi
+
 # wrapper
-feh --bg-fill /home/memory/Pictures/WOW-LM.jpg
+wallpaper="`pwd`/wallpaper.jpg"
+if [ -f "$wallpaper" ]; then
+    feh --bg-fill "$wallpaper"
+fi
 
+#
 # fcitx
-fcitx &
+#
+ps cax | grep fcitx > /dev/null
+if [ $? -ne 0 ]; then
+    fcitx &
+fi
 
-compton -b
+ps cax | grep compton > /dev/null
+if [ $? -ne 0 ]; then
+    compton -b
+fi
