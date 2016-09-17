@@ -247,6 +247,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
 
   (setq-default
 
+   ;; Reason: https://youtu.be/HKF41ivkBb0?t=14m2s
+   evil-shift-round nil
+
    ;; change elpa archives to tsinghua mirrors
    configuration-layer--elpa-archives
    '(("melpa-cn" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
