@@ -272,6 +272,18 @@ you should place your code here."
    ;; map jj to <ESC>
    evil-escape-key-sequence "jj"
    evil-escape-delay 0.2
+
+   ;; indent
+   ;; js2-mode
+   js2-basic-offset 2
+   ;; json indent
+   js-indent-level 2
+   ;; web-mode
+   css-indent-offset 2
+   web-mode-markup-indent-offset 2
+   web-mode-css-indent-offset 2
+   web-mode-code-indent-offset 2
+   web-mode-attr-indent-offset 2
    )
 
   ;; line num
