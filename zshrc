@@ -48,7 +48,6 @@ plugins=(git zsh-syntax-highlighting systemd sudo)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl:/usr/bin/vendor_perl/:~/bin/
 
 # .bashrc
 export CLICOLOR="true"

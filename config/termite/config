@@ -30,7 +30,6 @@ browser = google-chrome-stable
 #modify_other_keys = false
 
 [colors]
-[colors]
 # Base16 Monokai
 # Scheme: Wimer Hazenberg (http://www.monokai.nl)
 
