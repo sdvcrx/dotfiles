@@ -1,14 +1,15 @@
 #!/bin/env bash
 
-screen_sh="`pwd`/screen.sh"
+i3_config_path="$HOME/.i3"
+screen_sh="$i3_config_path/screen.sh"
 
-if [ -f "$screen_sh" ]; then
+if [ -e "$screen_sh" ]; then
     sh "$screen_sh"
 fi
 
 # wrapper
-wallpaper="`pwd`/wallpaper.jpg"
-if [ -f "$wallpaper" ]; then
+wallpaper="$i3_config_path/wallpaper.jpg"
+if [ -e "$wallpaper" ]; then
     feh --bg-fill "$wallpaper"
 fi
 
