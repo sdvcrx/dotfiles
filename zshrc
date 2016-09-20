@@ -150,6 +150,8 @@ export TERMINAL=konsole
 eval "$(envoy -p)"
 
 # fzf
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+
 fe() {
   IFS='
 '
