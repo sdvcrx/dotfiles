@@ -276,6 +276,9 @@ you should place your code here."
    ;; indent
    ;; js2-mode
    js2-basic-offset 2
+   js2-strict-missing-semi-warning nil
+   js2-strict-trailing-comma-warning nil
+
    ;; json indent
    js-indent-level 2
    ;; web-mode
@@ -284,7 +287,12 @@ you should place your code here."
    web-mode-css-indent-offset 2
    web-mode-code-indent-offset 2
    web-mode-attr-indent-offset 2
+   web-mode-style-padding 0
+   web-mode-script-padding 0
    )
+
+  ;; add support for Vue.js
+  (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
 
   ;; line num
   ;; (global-linum-mode t)
