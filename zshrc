@@ -106,6 +106,11 @@ alias yaupg='yaourt -Syua'
 alias yi='yaourt -S'
 alias ys='yaourt -Ss'
 
+# THanks https://robots.thoughtbot.com/my-life-with-neovim
+if type nvim > /dev/null 2>&1; then
+    alias vim='nvim'
+fi
+
 # cpuinfo
 alias cpuinfo='watch grep \"cpu MHz\" /proc/cpuinfo'
 
