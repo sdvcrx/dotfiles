@@ -144,6 +144,10 @@ eval "$(fasd --init auto)"
 alias vi='f -e vim'
 unset GREP_OPTIONS
 
+# prompt command not found
+# `yaourt -S pkgfile` is required
+source /usr/share/doc/pkgfile/command-not-found.zsh
+
 # nodejs
 # phantomjs
 export PHANTOMJS_CDNURL=http://cnpmjs.org/downloads
