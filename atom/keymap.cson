@@ -51,3 +51,6 @@
 
 'atom-text-editor[data-grammar="source js jsx"]:not([mini])':
   'tab': 'emmet:expand-abbreviation-with-tab'
+
+'atom-text-editor[data-grammar="text html vue"]:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'

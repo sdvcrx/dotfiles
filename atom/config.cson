@@ -9,6 +9,7 @@
     backUpBeforeSaving: true
     fontSize: 15
     invisibles: {}
+    preferredLineLength: 100
   emmet: {}
   "exception-reporting":
     userId: "6d3f6a12-9dca-25fa-d8d5-73f8e0378189"
