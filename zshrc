@@ -168,3 +168,7 @@ fe() {
   [[ -n "$files" ]] && nvim "${files[@]}"
   unset IFS
 }
+
+# virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+
