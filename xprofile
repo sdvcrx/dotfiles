@@ -20,5 +20,16 @@ export XMODIFIERS="@im=fcitx"
 export LANG=zh_CN.UTF-8
 export LC_ALL="zh_CN.UTF-8"
 
+#
+# Steam
 # Using native runtime for steam
+# 
 export STEAM_RUNTIME=0
+
+#
+# Qt apperance
+#
+# This fix i3 dolphin icon missing issue
+# $ yaourt -S qt5ct
+export QT_QPA_PLATFORMTHEME="qt5ct"
+
