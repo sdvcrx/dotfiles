@@ -43,7 +43,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git zsh-syntax-highlighting systemd sudo)
+plugins=(git zsh-syntax-highlighting systemd sudo autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -139,9 +139,7 @@ if [[ $TERM == xterm-termite  ]]; then
     export TERM=xterm-256color
 fi
 
-# fasd
-eval "$(fasd --init auto)"
-alias vi='f -e vim'
+# alias vi='f -e vim'
 unset GREP_OPTIONS
 
 # prompt command not found
