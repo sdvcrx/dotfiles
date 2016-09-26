@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 lock() {
+    i3lock-fancy
     #  killall compton
-    $HOME/.config/i3lock/i3lock.sh
+    # $HOME/.config/i3lock/i3lock.sh
     #  compton -b
 }
 
