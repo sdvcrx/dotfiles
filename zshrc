@@ -170,3 +170,12 @@ fe() {
 # virtualenvwrapper
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 
+#
+# termite: enable ctrl+shift+t open new tab
+# https://github.com/thestinger/termite#id2
+#
+if [[ $TERM == xterm-termite ]]; then
+  . /etc/profile.d/vte.sh
+  __vte_osc7
+fi
+
