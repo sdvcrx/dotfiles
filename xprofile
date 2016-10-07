@@ -24,7 +24,8 @@ export LC_ALL="zh_CN.UTF-8"
 # Steam
 # Using native runtime for steam
 # 
-export STEAM_RUNTIME=0
+# Use steam-native instead
+# export STEAM_RUNTIME=0
 
 #
 # Qt apperance
