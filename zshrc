@@ -146,10 +146,6 @@ unset GREP_OPTIONS
 # `yaourt -S pkgfile` is required
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
-# nodejs
-# phantomjs
-export PHANTOMJS_CDNURL=http://cnpmjs.org/downloads
-
 # i3
 export TERMINAL=konsole
 
