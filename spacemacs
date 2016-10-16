@@ -351,6 +351,11 @@ you should place your code here."
   ;; add support for Vue.js
   (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
 
+  ;; Bind C-w as delete word when autocomplete is open.
+  ;; See: https://github.com/syl20bnr/spacemacs/issues/4243
+  (with-eval-after-load 'company
+    (define-key company-active-map (kbd "C-w") 'evil-delete-backward-word))
+
   ;; line num
   ;; (global-linum-mode t)
   )
