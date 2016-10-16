@@ -47,7 +47,7 @@ values."
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
      ;; spell-checking
-     ;; syntax-checking
+     syntax-checking
      ;; version-control
      shell-scripts
      javascript
@@ -335,6 +335,11 @@ you should place your code here."
    js2-basic-offset 2
    js2-strict-missing-semi-warning nil
    js2-strict-trailing-comma-warning nil
+   js2-mode-show-parse-errors nil
+   js2-mode-show-strict-warnings nil
+
+   ;; flycheck check syntax after saving file
+   flycheck-check-syntax-automatically '(mode-enabled save)
 
    ;; json indent
    js-indent-level 2
