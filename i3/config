@@ -216,8 +216,7 @@ bar {
     separator_symbol "■"
     bindsym button4 nop
     bindsym button5 nop
-    tray_output HDMI1
-    tray_output LVDS1
+    tray_output HDMI-1
     tray_padding 0
     height 30
 
