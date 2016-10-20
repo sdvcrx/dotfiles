@@ -118,7 +118,11 @@ alias cpuinfo='watch grep \"cpu MHz\" /proc/cpuinfo'
 export MANPAGER="/usr/bin/most -s"
 
 # ag(the_silver_searcher)
-alias ag='ag -i --color-match "1;32"'
+# alias ag='ag -i --color-match "1;32"'
+
+# rg(ripgrep)
+# migrate ag to rg
+alias ag='rg'
 
 # vbox
 alias vboxload='sudo modprobe vboxdrv vboxpci vboxnetflt vboxnetadp'
