@@ -262,7 +262,7 @@ for_window [class="VirtualBox"] floating enable
 for_window [class="Dolphin"] floating enable
 for_window [class="Zeal"] floating enable
 for_window [class="Altyo"] floating enable
-for_window [class="telegram-desktop"] floating enable border none
+for_window [class="TelegramDesktop"] floating enable border none
 for_window [class="Showimage"] floating enable
 for_window [class="Zathura"] floating enable
 for_window [class="Firefox" instance="Places"] floating enable
