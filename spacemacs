@@ -328,7 +328,8 @@ you should place your code here."
 
    ;; map jj to <ESC>
    evil-escape-key-sequence "jj"
-   evil-escape-delay 0.2
+   evil-escape-delay 0.3
+   evil-escape-inhibit-functions '(evil-visual-state-p)
 
    ;; indent
    ;; js2-mode
