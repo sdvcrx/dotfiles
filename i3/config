@@ -272,6 +272,8 @@ for_window [instance="QQ.exe"] floating enable border none
 for_window [class="Genymotion"] floating enable
 for_window [class="Genymotion Player"] floating enable
 for_window [class="Wine"] floating enable
+for_window [class="keepassx"] floating enable
+for_window [class="WizNote"] floating enable
 
 # Exec
 exec --no-startup-id $HOME/.i3/autostart.sh
