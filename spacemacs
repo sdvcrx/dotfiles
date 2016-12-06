@@ -356,6 +356,8 @@ you should place your code here."
 
   ;; add support for Vue.js
   (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
+  ;; for njk template
+  (add-to-list 'auto-mode-alist '("\\.njk\\'" . web-mode))
 
   ;; Bind C-w as delete word when autocomplete is open.
   ;; See: https://github.com/syl20bnr/spacemacs/issues/4243
