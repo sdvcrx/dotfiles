@@ -21,7 +21,7 @@ set smtp_url    = "smtps://USER@smtp.gmail.com/465"
 set smtp_pass   = $my_google_passwd
 
 set from        = "memory.silentvoyage@gmail.com"
-set realname    = "banbanchs"
+set realname    = "sdvcrx"
 
 # SSL
 #
