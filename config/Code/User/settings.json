@@ -1,0 +1,17 @@
+{
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.hlsearch": true,
+    "vim.easymotion": true,
+    "vim.enableNeovim": true,
+    "files.autoSave": "onWindowChange",
+    "vim.leader": ",",
+    "vim.useSystemClipboard": true,
+    "vim.neovimPath": "/usr/bin/nvim",
+    "workbench.colorTheme": "Monokai Dimmed"
+}
