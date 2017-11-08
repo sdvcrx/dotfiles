@@ -263,7 +263,7 @@ for_window [class="Dolphin"] floating enable
 for_window [class="Zeal"] floating enable
 for_window [class="Altyo"] floating enable
 for_window [class="TelegramDesktop"] floating enable border none
-for_window [class="Showimage"] floating enable
+for_window [class="showimage"] floating enable
 for_window [class="Zathura"] floating enable
 for_window [class="Firefox" instance="Places"] floating enable
 for_window [class="Android SDK Manager"] floating enable
@@ -273,7 +273,9 @@ for_window [class="Genymotion"] floating enable
 for_window [class="Genymotion Player"] floating enable
 for_window [class="Wine"] floating enable
 for_window [class="keepassx"] floating enable
-for_window [class="WizNote"] floating enable
+for_window [class="Anki"] floating enable
+for_window [class="electronic-wechat"] floating enable
+for_window [class="GoldenDict"] floating enable
 
 # Exec
 exec --no-startup-id $HOME/.i3/autostart.sh
