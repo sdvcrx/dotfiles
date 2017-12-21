@@ -179,3 +179,4 @@ if [[ $TERM == xterm-termite ]]; then
   __vte_osc7
 fi
 
+alias rdp='rdesktop -g 1360x760 -P -z -K -x l -r clipboard:PRIMARYCLIPBOARD 127.0.0.1'
