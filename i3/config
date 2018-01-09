@@ -210,7 +210,7 @@ bar {
     position top
     # mode dock
     # font pango: Ubuntu Mono 11
-    font pango: Ubuntu Mono, FontAwesome 11
+    font pango: Ubuntu Mono, Font Awesome 5 Free 11
 
     strip_workspace_numbers yes
     separator_symbol "■"
