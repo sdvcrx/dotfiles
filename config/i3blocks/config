@@ -28,7 +28,7 @@ border=#cc241d
 
 [memory]
 label=
-command=/usr/libexec/i3blocks/memory
+command=/usr/lib/i3blocks/memory
 interval=30
 border=#ebdbb2
 
