@@ -38,6 +38,9 @@ bindsym $mod+Return exec termite
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# screenshot
+bindsym Print exec flameshot gui
+
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run -fn  "-*-anorexia-medium-*-*-*-11-*-*-*-*-*-*-*" -nb "#101010" -nf "#999999" -sb "#191919" -sf "#825969" -b
 # There also is the (new) i3-dmenu-desktop which only displays applications
