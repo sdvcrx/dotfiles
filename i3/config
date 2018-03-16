@@ -41,6 +41,11 @@ bindsym $mod+Shift+q kill
 # screenshot
 bindsym Print exec flameshot gui
 
+# multimedia keys
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +1%   # increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -1%   # decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle         # mute sound
+
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run -fn  "-*-anorexia-medium-*-*-*-11-*-*-*-*-*-*-*" -nb "#101010" -nf "#999999" -sb "#191919" -sf "#825969" -b
 # There also is the (new) i3-dmenu-desktop which only displays applications
