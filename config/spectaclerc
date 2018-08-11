@@ -1,7 +1,7 @@
 [General]
 default-save-location[$e]=$HOME/Pictures
 last-saved-to[$e]=$HOME/Pictures
-lastSaveAsLocation=file:///home/banbanchs/
+lastSaveAsLocation=file:///home/sdvcrx/VirtualBox VMs/
 save-filename-format=Screenshot_%Y-%M-%D-%H-%m-%S
 
 [GuiConfig]

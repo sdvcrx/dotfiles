@@ -1,6 +1,6 @@
 # dotfiles #
 
-I am using `rcm`(rc file management) to manage dotfiles.
+I am using [rcm](https://github.com/thoughtbot/rcm) to manage dotfiles.
 
 ## Install ##
 
@@ -19,3 +19,4 @@ Add a dotfile by copying
 
     mkrc -v -C files
 
+More usages: https://thoughtbot.github.io/rcm/rcm.7.html
