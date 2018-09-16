@@ -180,3 +180,6 @@ if [[ $TERM == xterm-termite ]]; then
 fi
 
 alias rdp='rdesktop -g 1360x760 -P -z -K -x l -r clipboard:PRIMARYCLIPBOARD 127.0.0.1'
+
+# inherit user alias https://www.gaojinan.com/pass-alias-to-sudo-shell.html
+alias sudo='sudo '
