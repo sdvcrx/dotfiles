@@ -154,7 +154,7 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 export TERMINAL=konsole
 
 # ssh agent
-eval "$(envoy -p)"
+eval $(keychain --systemd --eval --quiet id_ed25519)
 
 # fzf
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
