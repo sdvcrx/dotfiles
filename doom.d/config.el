@@ -10,7 +10,7 @@
 
  ;; evil
  ;; map jj to <ESC>
- ;; evil-escape-key-sequence "jj"
+ evil-escape-key-sequence "jj"
  ;; evil-escape-delay 0.3
  ;; evil-escape-inhibit-functions '(evil-visual-state-p)
 
@@ -25,10 +25,10 @@
  (:leader
    (:prefix "f"
      :desc "Save buffer" :n "s" #'save-buffer
-     :desc "Kill buffer" :n "d" #'doom/kill-this-buffer-in-all-windows
      :desc "Toggle neotree" :n "t" #'neotree-toggle)
+   (:prefix "b"
+     :desc "Kill buffer" :n "d" #'doom/kill-this-buffer-in-all-windows)
    (:prefix "g"
      :desc "Magit dispatch" :n "m" #'magit-dispatch-popup)
    )
- :i "jj" (λ! (evil-normal-state 1))
  )
