@@ -27,6 +27,8 @@
      :desc "Save buffer" :n "s" #'save-buffer
      :desc "Kill buffer" :n "d" #'doom/kill-this-buffer-in-all-windows
      :desc "Toggle neotree" :n "t" #'neotree-toggle)
+   (:prefix "g"
+     :desc "Magit dispatch" :n "m" #'magit-dispatch-popup)
    )
  :i "jj" (λ! (evil-normal-state 1))
  )
