@@ -14,8 +14,10 @@
        workspaces        ; tab emulation, persistence & separate workspaces
 
        :completion
-       company           ; the ultimate code completion backend
-       ;;helm              ; the *other* search engine for love and life
+       (company           ; the ultimate code completion backend
+        +auto)
+       ;; (helm              ; the *other* search engine for love and life
+       ;;  +auto)
        ;;ido              ; the other *other* search engine...
        (ivy              ; a search engine for love and life
         +fuzzy)
@@ -61,8 +63,8 @@
        vc                ; version-control and Emacs, sitting in a tree
 
        :tools
-       ;;ansible
-       ;;docker
+       ansible
+       docker
        editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
        ;;gist              ; interacting with github gists
@@ -76,7 +78,7 @@
        ;;terraform         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
        ;;upload            ; map local to remote projects via ssh/ftp
-       ;;wakatime
+       wakatime
 
        :lang
        ;;assembly          ; assembly for fun or debugging
