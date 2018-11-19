@@ -18,6 +18,11 @@
  doom-font (font-spec :family "Source Code Pro" :size 15)
  doom-unicode-font (font-spec :family "Source Code Pro" :size 15)
 
+ ;; elpa
+ package-archives
+ '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+   ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+   ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
 )
 
 ;; keybindings
