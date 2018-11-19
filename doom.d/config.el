@@ -1,12 +1,13 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
-(require 'company)
+;; company
+(after! company
+  (setq-default
+   company-idle-delay 0.3
+   company-minimum-prefix-length 3))
 
 (setq-default
  user-full-name "sdvcrx"
-
- company-idle-delay 0.2
- company-minimum-prefix-length 3
 
  ;; evil
  ;; map jj to <ESC>
