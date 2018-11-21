@@ -6,6 +6,10 @@
    company-idle-delay 0.3
    company-minimum-prefix-length 3))
 
+;; flycheck
+(after! flycheck
+  (setq flycheck-idle-change-delay 5))
+
 (setq-default
  user-full-name "sdvcrx"
 
