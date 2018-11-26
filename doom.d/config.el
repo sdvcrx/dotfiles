@@ -12,6 +12,7 @@
 
 (setq-default
  user-full-name "sdvcrx"
+ user-mail-address "me@sdvcrx.com"
 
  ;; evil
  ;; map jj to <ESC>
@@ -35,6 +36,12 @@
 
 ;; keybindings
 (map!
+ ;; Easier window navigation
+ :n "C-h"   #'evil-window-left
+ :n "C-j"   #'evil-window-down
+ :n "C-k"   #'evil-window-up
+ :n "C-l"   #'evil-window-right
+
  (:leader
    (:prefix "f"
      :desc "Save buffer" :n "s" #'save-buffer
