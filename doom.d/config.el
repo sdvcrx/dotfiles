@@ -41,4 +41,15 @@
    (:prefix "g"
      :desc "Magit dispatch" :n "m" #'magit-dispatch-popup)
    )
+
+ ;; python major mode
+ (:after python
+   (:map python-mode-map
+     :localleader
+     :desc "pyvenv"
+     :prefix "v"
+     :desc "Python virtualenv workon" :n "w" #'pyvenv-workon
+     :desc "Deactive virtualenv" :n "d" #'pyvenv-deactivate
+     :desc "Active virtualenv" :n "a" #'pyvenv-activate
+     ))
  )
