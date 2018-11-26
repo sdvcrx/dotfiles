@@ -19,6 +19,9 @@
  ;; evil-escape-delay 0.3
  ;; evil-escape-inhibit-functions '(evil-visual-state-p)
 
+ ;; doom
+ doom-localleader-key ","
+
  ;; font
  doom-font (font-spec :family "Source Code Pro" :size 15)
  doom-unicode-font (font-spec :family "Source Code Pro" :size 15)
