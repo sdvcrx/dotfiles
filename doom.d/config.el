@@ -54,6 +54,7 @@
  (:leader
    (:prefix "f"
      :desc "Save buffer" :n "s" #'save-buffer
+     :desc "Save all buffers" :n "S" #'evil-write-all
      :desc "Toggle neotree" :n "t" #'neotree-toggle)
    (:prefix "b"
      :desc "Kill buffer" :n "d" #'doom/kill-this-buffer-in-all-windows)
