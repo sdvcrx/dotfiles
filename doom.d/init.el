@@ -135,6 +135,7 @@
        ;;swift             ; who asked for emoji variables?
        web               ; the tubes
        ;;vala              ; GObjective-C
+       protobuf            ; protobuf
 
        ;; Applications are complex and opinionated modules that transform Emacs
        ;; toward a specific purpose. They may have additional dependencies and

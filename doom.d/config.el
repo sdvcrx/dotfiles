@@ -1,14 +1,5 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
-;; protobuf mode
-(def-package! protobuf-mode
-  :mode "\\.proto$"
-  :init
-  ;; copy from spacemacs
-  (setq-hook! 'protobuf-mode-hook
-   imenu-generic-expression '((nil "^[[:space:]]*\\(message\\|service\\|enum\\)[[:space:]]+\\([[:alnum:]]+\\)" 2)))
-  )
-
 ;; company
 (after! company
   (setq-default
