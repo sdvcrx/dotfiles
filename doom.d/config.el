@@ -51,6 +51,9 @@
  :n "C-k"   #'evil-window-up
  :n "C-l"   #'evil-window-right
 
+ ;; Override C-w delete-word
+ :gi "C-w" #'evil-delete-backward-word
+
  (:leader
    (:prefix "f"
      :desc "Save buffer" :n "s" #'save-buffer
