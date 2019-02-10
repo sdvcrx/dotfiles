@@ -4,13 +4,18 @@ Using [i3-gaps-next](https://github.com/Airblader/i3), a fork of [i3wm](http://w
 
 ### Dependency ###
 
-    yaourt -S i3-gaps-next-git i3lock-color-git i3lock-fancy-git i3status i3-blocks-gaps-git conky compton-git pavucontrol xtitle rofi feh fcitx ttf-ubuntu-font-family otf-font-awesome flameshot
+```bash
+yay -S i3-gaps-next-git i3lock-color-git i3lock-fancy-git i3status i3-blocks-gaps-git conky compton-git pavucontrol xtitle rofi feh ttf-ubuntu-font-family otf-font-awesome
+
+# tool
+yay -S pcmanfm-qt flameshot fcitx
+```
 
 ### Generate screen layout ###
 
 We use `arandr` to generate layout file
 
-    yaourt -S arandr
+    yay -S arandr
     arandr # save new layout to ~/.i3/scree.sh
 
 ### FAQ ###
