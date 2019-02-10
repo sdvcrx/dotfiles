@@ -102,9 +102,9 @@ alias l='ls --color=auto'
 alias grep='grep -i --color=auto'
 alias egrep='grep -E --color=auto'
 alias fgrep='grep -F --color=auto'
-alias yaupg='yaourt -Syua'
-alias yi='yaourt -S'
-alias ys='yaourt -Ss'
+alias yaupg='yay -Syu'
+alias yi='yay -S'
+alias ys='yay -Ss'
 
 # THanks https://robots.thoughtbot.com/my-life-with-neovim
 if type nvim > /dev/null 2>&1; then
