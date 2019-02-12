@@ -10,6 +10,12 @@
 (after! flycheck
   (setq flycheck-idle-change-delay 5))
 
+(after! yasnippet
+  (push "~/.doom.d/templates" yas-snippet-dirs)
+  (set-file-template! "\\.vue$" ':trigger "__.vue" :mode 'web-mode)
+  (yas-reload-all)
+  )
+
 (setq-default
  user-full-name "sdvcrx"
  user-mail-address "me@sdvcrx.com"
