@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 lock() {
-    i3lock-fancy
+    i3lock-fancier-rapid 5 10
     #  killall compton
     # $HOME/.config/i3lock/i3lock.sh
     #  compton -b
