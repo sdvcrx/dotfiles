@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # .bashrc
 export CLICOLOR="true"
-export EDITOR="/usr/bin/vim -p -X" visudo
+export EDITOR="/usr/bin/nvim -p -X" visudo
 export GIT_EDITOR="vim"
 
 # keybind
