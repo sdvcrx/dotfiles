@@ -267,6 +267,7 @@ client.background       $black
 for_window [class="mpv"] floating enable
 for_window [class="Krusader"] floating enable
 for_window [class="VirtualBox"] floating enable
+for_window [class="VirtualBox Machine"] floating disable
 for_window [class="Dolphin"] floating enable
 for_window [class="Zeal"] floating enable
 for_window [class="Altyo"] floating enable
