@@ -1,0 +1,17 @@
+# vim: filetype=neomuttrc
+
+# Custom mailcap
+set mailcap_path = ~/.config/mutt/mailcap
+
+set date_format = "%F %T"
+set attribution = "在 %d， %f 写道："
+my_hdr X-Mailer: neomutt
+
+# Auto sort options
+# set sort = 'threads'
+# set sort_aux = 'reverse-last-date-received'
+# set auto_tag = yes
+
+macro index A \
+    "<tag-pattern>~N<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" \
+    "mark all new as read"
