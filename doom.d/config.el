@@ -16,6 +16,20 @@
   (yas-reload-all)
   )
 
+(after! web-mode
+  (flycheck-add-mode 'javascript-eslint 'web-mode)
+  (eslintd-fix)
+
+  (defun custom-web-mode-hook ()
+    "Hooks for Web mode."
+    (setq
+      web-mode-style-padding 0
+      web-mode-script-padding 0
+      )
+    )
+  (add-hook 'web-mode-hook  'custom-web-mode-hook)
+  )
+
 (setq-default
  user-full-name "sdvcrx"
  user-mail-address "me@sdvcrx.com"
