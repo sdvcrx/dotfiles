@@ -1,6 +1,6 @@
 ;;; lang/proto/config.el -*- lexical-binding: t; -*-
 
-(def-package! protobuf-mode
+(use-package! protobuf-mode
   :mode "\\.proto$"
   :init
   ;; copy from spacemacs
