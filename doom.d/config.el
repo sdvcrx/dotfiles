@@ -34,6 +34,8 @@
  user-full-name "sdvcrx"
  user-mail-address "me@sdvcrx.com"
 
+ org-directory "~/Documents/org/"
+
  ;; evil
  ;; map jj to <ESC>
  evil-escape-key-sequence "jj"
