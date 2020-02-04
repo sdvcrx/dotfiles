@@ -1,5 +1,9 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
+;; evil-snipe
+(after! evil-snipe
+  (evil-snipe-mode -1))
+
 ;; company
 (after! company
   (setq-default
