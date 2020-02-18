@@ -93,3 +93,12 @@
      :desc "Active virtualenv" :n "a" #'pyvenv-activate
      ))
  )
+
+(after! go-mode
+  (map! :map go-mode-map
+        :localleader
+        (:prefix ("i" . "imports")
+          "i" #'go-import-add
+          "a" #'go-import-add
+          "r" #'go-remove-unused-imports
+          "g" #'go-goto-imports)))
