@@ -20,20 +20,6 @@
   (yas-reload-all)
   )
 
-(after! web-mode
-  (flycheck-add-mode 'javascript-eslint 'web-mode)
-  (eslintd-fix)
-
-  (defun custom-web-mode-hook ()
-    "Hooks for Web mode."
-    (setq
-      web-mode-style-padding 0
-      web-mode-script-padding 0
-      )
-    )
-  (add-hook 'web-mode-hook  'custom-web-mode-hook)
-  )
-
 (setq-default
  user-full-name "sdvcrx"
  user-mail-address "me@sdvcrx.com"
@@ -82,6 +68,11 @@
    )
  )
 
+;;
+;; language spec keybindings
+;;
+
+;; golang
 (after! go-mode
   (map! :map go-mode-map
         :localleader
@@ -90,3 +81,23 @@
           "a" #'go-import-add
           "r" #'go-remove-unused-imports
           "g" #'go-goto-imports)))
+
+;; vue / FE
+(after! web-mode
+  (flycheck-add-mode 'javascript-eslint 'web-mode)
+  (eslintd-fix)
+
+  ;; set emmet-expand to [tab] or Ctrl+e
+  (map! :map emmet-mode-keymap
+        :i [tab] #'emmet-expand-line
+        :i [C-e] #'emmet-expand-line)
+
+  ;; set vue style/script indent to 0
+  (defun custom-web-mode-hook ()
+    "Hooks for Web mode."
+    (setq
+      web-mode-style-padding 0
+      web-mode-script-padding 0
+      )
+    )
+  (add-hook 'web-mode-hook  'custom-web-mode-hook))
