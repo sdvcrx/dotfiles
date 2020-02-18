@@ -74,24 +74,12 @@
  (:leader
    (:prefix "f"
      :desc "Save buffer" :n "s" #'save-buffer
-     :desc "Save all buffers" :n "S" #'evil-write-all
-     :desc "Toggle neotree" :n "t" #'neotree-toggle)
+     :desc "Save all buffers" :n "S" #'evil-write-all)
    (:prefix "b"
      :desc "Kill buffer" :n "d" #'doom/kill-this-buffer-in-all-windows)
    (:prefix "g"
      :desc "Magit dispatch" :n "m" #'magit-dispatch-popup)
    )
-
- ;; python major mode
- (:after python
-   (:map python-mode-map
-     :localleader
-     :desc "pyvenv"
-     :prefix "v"
-     :desc "Python virtualenv workon" :n "w" #'pyvenv-workon
-     :desc "Deactive virtualenv" :n "d" #'pyvenv-deactivate
-     :desc "Active virtualenv" :n "a" #'pyvenv-activate
-     ))
  )
 
 (after! go-mode
