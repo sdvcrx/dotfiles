@@ -41,9 +41,9 @@
 
  ;; elpa
  package-archives
- '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-   ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
-   ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
+ '(("melpa" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+   ("org"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+   ("gnu"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
 )
 
 ;; keybindings
