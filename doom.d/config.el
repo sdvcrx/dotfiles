@@ -90,7 +90,9 @@
   ;; set emmet-expand to [tab] or Ctrl+e
   (map! :map emmet-mode-keymap
         :i [tab] #'emmet-expand-line
-        :i [C-e] #'emmet-expand-line)
+        :i "C-e" #'emmet-expand-line
+        :i "C-j" #'emmet-next-edit-point
+        :i "C-k" #'emmet-prev-edit-point)
 
   ;; set vue style/script indent to 0
   (defun custom-web-mode-hook ()
