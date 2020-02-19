@@ -76,6 +76,7 @@
 (after! go-mode
   (map! :map go-mode-map
         :localleader
+        "i" nil
         (:prefix ("i" . "imports")
           "i" #'go-import-add
           "a" #'go-import-add
