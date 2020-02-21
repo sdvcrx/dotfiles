@@ -26,6 +26,9 @@
 
  org-directory "~/Documents/org/"
 
+ ;; modeline
+ doom-modeline-buffer-file-name-style 'relative-to-project
+
  ;; evil
  ;; map jj to <ESC>
  evil-escape-key-sequence "jj"
