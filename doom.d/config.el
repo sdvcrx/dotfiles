@@ -76,6 +76,14 @@
 ;;
 
 ;; golang
+
+;; Format on save
+;; https://github.com/hlissner/doom-emacs/issues/1652#issuecomment-589408965
+;; (add-to-list '+format-on-save-enabled-modes 'go-mode t)
+(add-hook! 'go-mode-hook
+  (add-hook 'before-save-hook #'lsp-format-buffer nil 'local)
+  (add-hook 'before-save-hook #'lsp-organize-imports nil 'local))
+
 (after! go-mode
   (map! :map go-mode-map
         :localleader
