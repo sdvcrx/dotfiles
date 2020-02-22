@@ -39,8 +39,9 @@
  doom-localleader-key ","
 
  ;; font
- doom-font (font-spec :family "Source Code Pro" :size 15)
- doom-unicode-font (font-spec :family "Source Code Pro" :size 15)
+ ;; yay -S ttf-jetbrains-mono
+ doom-font (font-spec :family "JetBrains Mono" :size 17)
+ doom-unicode-font (font-spec :family "JetBrains Mono" :size 17)
 
  ;; elpa
  package-archives
