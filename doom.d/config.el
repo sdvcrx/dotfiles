@@ -39,8 +39,7 @@
  ;; evil
  ;; map jj to <ESC>
  evil-escape-key-sequence "jj"
- ;; evil-escape-delay 0.3
- ;; evil-escape-inhibit-functions '(evil-visual-state-p)
+ evil-escape-delay 0.2
 
  ;; doom
  doom-localleader-key ","
