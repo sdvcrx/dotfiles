@@ -20,6 +20,13 @@
   (yas-reload-all)
   )
 
+;; set initial frame size
+(pushnew! initial-frame-alist
+          '(width . 85)
+          '(height . 40)
+          '(left . 0)
+          '(bottom . 0))
+
 (setq-default
  user-full-name "sdvcrx"
  user-mail-address "me@sdvcrx.com"
