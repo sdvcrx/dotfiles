@@ -36,6 +36,11 @@
  ;; modeline
  doom-modeline-buffer-file-name-style 'relative-to-project
 
+ ;; tabs
+ centaur-tabs-set-bar 'under
+ x-underline-at-descent-line t
+ centaur-tabs-height 32
+
  ;; evil
  ;; map jj to <ESC>
  evil-escape-key-sequence "jj"
