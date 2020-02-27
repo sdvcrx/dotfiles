@@ -23,5 +23,5 @@ fi
 
 ps cax | grep compton > /dev/null
 if [ $? -ne 0 ]; then
-    compton -b
+    picom -b
 fi
