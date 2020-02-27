@@ -283,6 +283,7 @@ for_window [class="Genymotion"] floating enable
 for_window [class="Genymotion Player"] floating enable
 for_window [class="Wine"] floating enable
 for_window [class="keepassx"] floating enable
+for_window [class="KeePassXC"] floating enable
 for_window [class="Anki"] floating enable
 for_window [class="electronic-wechat"] floating enable
 for_window [class="GoldenDict"] floating enable
