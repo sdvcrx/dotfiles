@@ -16,12 +16,16 @@ fi
 #
 # fcitx
 #
-ps cax | grep fcitx > /dev/null
+pgrep fcitx > /dev/null
 if [ $? -ne 0 ]; then
     fcitx &
 fi
 
-ps cax | grep compton > /dev/null
+#
+# picom
+#
+pgrep picom > /dev/null
 if [ $? -ne 0 ]; then
     picom -b
 fi
+
