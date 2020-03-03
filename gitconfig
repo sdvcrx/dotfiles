@@ -1,5 +1,5 @@
 [user]
-	name = sdvcrx\n
+	name = sdvcrx
 	email = memory.silentvoyage@gmail.com
 	signingkey = 8E22C83F5B1FF15A255C122F0E4C80D05DC6BF1C
 [core]
@@ -17,3 +17,5 @@
     dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
 [github]
 	user = sdvcrx
+[commit]
+	gpgsign = true
