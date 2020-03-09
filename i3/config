@@ -289,6 +289,7 @@ for_window [class="Anki"] floating enable
 for_window [class="electronic-wechat"] floating enable
 for_window [class="GoldenDict"] floating enable
 for_window [class="dingtalk"] floating enable
+for_window [class="yakuake"] floating enable
 
 # Exec
 exec --no-startup-id $HOME/.i3/autostart.sh

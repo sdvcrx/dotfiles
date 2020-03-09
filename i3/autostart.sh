@@ -29,3 +29,11 @@ if [ $? -ne 0 ]; then
     picom -b
 fi
 
+#
+# yakuake
+#
+pgrep yakuake > /dev/null
+if [ $? -ne 0 ]; then
+    yakuake &
+fi
+
