@@ -18,7 +18,7 @@ fi
 #
 pgrep fcitx > /dev/null
 if [ $? -ne 0 ]; then
-    fcitx &
+    fcitx5 &
 fi
 
 #
