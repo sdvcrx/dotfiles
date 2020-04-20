@@ -44,7 +44,7 @@
  ;; evil
  ;; map jj to <ESC>
  evil-escape-key-sequence "jj"
- evil-escape-delay 0.2
+ evil-escape-delay 0.3
 
  ;; doom
  doom-localleader-key ","
@@ -68,6 +68,10 @@
  :n "C-j"   #'evil-window-down
  :n "C-k"   #'evil-window-up
  :n "C-l"   #'evil-window-right
+
+ ;; enhance
+ :n ";" 'evil-ex
+ :n "C-/" 'swiper   ;; Ctrl+/
 
  ;; Override C-w delete-word
  :gi "C-w" #'evil-delete-backward-word
@@ -127,4 +131,11 @@
       web-mode-script-padding 0
       )
     )
-  (add-hook 'web-mode-hook  'custom-web-mode-hook))
+  (add-hook 'web-mode-hook 'custom-web-mode-hook))
+
+(after! org
+  (add-to-list 'org-capture-templates
+               '("w" "Work todo" entry
+                 (file+headline "work.org" "Inbox")
+                 "* TODO %?" :prepend t :kill-buffer t))
+  )
