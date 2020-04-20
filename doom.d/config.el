@@ -110,6 +110,8 @@
   (flycheck-add-mode 'javascript-eslint 'web-mode)
   (eslintd-fix)
 
+  (setq lsp-vetur-validation-template nil)
+
   ;; set emmet-expand to [tab] or Ctrl+e
   (map! :map emmet-mode-keymap
         :i [tab] #'emmet-expand-line
