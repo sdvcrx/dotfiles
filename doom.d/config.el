@@ -100,6 +100,10 @@
     (add-hook 'before-save-hook #'lsp-format-buffer nil 'local)
     (add-hook 'before-save-hook #'lsp-organize-imports nil 'local))
 
+  (setq
+   lsp-gopls-hover-kind "SingleLine"
+   lsp-gopls-use-placeholders nil)
+
   (map! :map go-mode-map
         :localleader
         "i" nil
