@@ -5,7 +5,7 @@ Using [i3-gaps-next](https://github.com/Airblader/i3), a fork of [i3wm](http://w
 ### Dependency ###
 
 ```bash
-yay -S i3-gaps-next-git i3lock-color-git i3lock-fancier-rapid i3status i3-blocks-gaps-git picom-git pavucontrol-qt xtitle rofi feh
+yay -S i3-gaps-next-git i3lock-color-git i3lock-fancier-rapid i3status i3-blocks-gaps-git picom-git pavucontrol-qt xtitle rofi feh xsettingsd
 
 # fonts
 yay -S ttf-ubuntu-font-family otf-font-awesome ttf-ubuntu-mono-derivative-powerline-git

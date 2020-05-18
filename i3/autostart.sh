@@ -37,3 +37,7 @@ if [ $? -ne 0 ]; then
     yakuake &
 fi
 
+pgrep xsettingsd > /dev/null
+if [ $? -ne 0 ]; then
+    /usr/bin/xsettingsd &
+fi
