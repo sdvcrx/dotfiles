@@ -46,6 +46,14 @@
  evil-escape-key-sequence "jj"
  evil-escape-delay 0.3
 
+ ;; lsp-eslint
+ lsp-eslint-run "onSave"
+ lsp-eslint-auto-fix-on-save t
+ lsp-eslint-server-command
+ `("node"
+   ,(expand-file-name "~/.vscode-oss/extensions/dbaeumer.vscode-eslint-2.1.5/server/out/eslintServer.js")
+   "--stdio")
+
  ;; doom
  doom-localleader-key ","
 
@@ -115,14 +123,12 @@
 
 ;; vue / FE
 (after! web-mode
-  (flycheck-add-mode 'javascript-eslint 'web-mode)
-  (eslintd-fix)
-
-  (setq lsp-vetur-validation-template nil)
+  (setq
+   lsp-vetur-validation-template nil
+   lsp-vetur-completion-use-scaffold-snippets nil)
 
   ;; set emmet-expand to [tab] or Ctrl+e
   (map! :map emmet-mode-keymap
-        :i [tab] #'emmet-expand-line
         :i "C-e" #'emmet-expand-line
         :i "C-j" #'emmet-next-edit-point
         :i "C-k" #'emmet-prev-edit-point)
