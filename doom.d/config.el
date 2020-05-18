@@ -62,6 +62,9 @@
  doom-font (font-spec :family "JetBrains Mono" :size 17)
  doom-unicode-font (font-spec :family "JetBrains Mono" :size 17)
 
+ ;; org-journal
+ org-journal-file-type 'weekly
+
  ;; elpa
  package-archives
  '(("melpa" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
