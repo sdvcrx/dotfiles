@@ -1,11 +1,11 @@
 ;;; init.el -*- lexical-binding: t; -*-
 
-;; This file controls what Doom modules are enabled and what order they load in.
-;; Remember to run 'doom sync' after modifying it!
+;; This file controls what Doom modules are enabled and what order they load
+;; in. Remember to run 'doom sync' after modifying it!
 
 ;; NOTE Press 'SPC h d h' (or 'C-h d h' for non-vim users) to access Doom's
-;;      documentation. There you'll find information about all of Doom's modules
-;;      and what flags they support.
+;;      documentation. There you'll find information about all of Doom's
+;;      modules and what flags they support.
 
 ;; NOTE Move your cursor over a module's name (or its flags) and press 'K' (or
 ;;      'C-c g k' for non-vim users) to view its documentation. This works on
@@ -14,9 +14,8 @@
 ;;      Alternatively, press 'gd' (or 'C-c g d') on a module to browse its
 ;;      directory (for easy access to its source code).
 
-
 (doom! :input
-       chinese
+       ;;chinese
        ;;japanese
 
        :completion
@@ -36,6 +35,7 @@
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        ;;hydra
        ;;indent-guides     ; highlighted indent columns
+       ;;minimap           ; show a map of the code on the side
        modeline          ; snazzy, Atom-inspired modeline, plus API
        nav-flash         ; blink the current line after jumping
        ;;neotree           ; a project drawer, like NERDTree for vim
@@ -71,7 +71,7 @@
        (dired             ; making dired pretty [functional]
         +icons)
        electric          ; smarter, keyword-based electric-indent
-       ibuffer           ; interactive buffer management
+       ibuffer         ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
 
@@ -105,13 +105,13 @@
        ;;pdf               ; pdf enhancements
        ;;prodigy           ; FIXME managing external services & code builders
        ;;rgb               ; creating color strings
+       ;;taskrunner        ; taskrunner for all your projects
        ;;terraform         ; infrastructure as code
        ;;tmux              ; an API for interacting with tmux
        ;;upload            ; map local to remote projects via ssh/ftp
 
        :lang
        ;;agda              ; types of types of types of types...
-       ;;assembly          ; assembly for fun or debugging
        ;;cc                ; C/C++/Obj-C madness
        ;;clojure           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
@@ -174,6 +174,7 @@
        ;;terra             ; Earth and Moon in alignment for performance.
        (web               ; the tubes
         +lsp)
+       ;;yaml              ; JSON, but readable
 
        :email
        ;;(mu4e +gmail)
@@ -188,5 +189,4 @@
 
        :config
        ;;literate
-
        (default +bindings +smartparens))
