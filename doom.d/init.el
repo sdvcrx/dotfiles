@@ -69,6 +69,7 @@
 
        :emacs
        (dired             ; making dired pretty [functional]
+        +ranger
         +icons)
        electric          ; smarter, keyword-based electric-indent
        ibuffer         ; interactive buffer management
@@ -97,7 +98,9 @@
        ;;gist              ; interacting with github gists
        (lookup              ; navigate your code and its documentation
         +docsets)
-       lsp
+       (lsp
+        +eglot
+        )
        ;;macos             ; MacOS-specific commands
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
@@ -148,6 +151,8 @@
        (org              ; organize your plain life in plain text
         +dragndrop       ; drag & drop files/images into org buffers
         +journal
+        +pretty
+        +roam
         ;;+hugo            ; use Emacs for hugo blogging
         ;;+jupyter        ; ipython/jupyter support for babel
         ;;+pandoc          ; export-with-pandoc support
