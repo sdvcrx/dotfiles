@@ -33,8 +33,6 @@
  user-full-name "sdvcrx"
  user-mail-address "me@sdvcrx.com"
 
- org-directory "~/Documents/org/"
-
  ;; modeline
  doom-modeline-buffer-file-name-style 'relative-to-project
 
@@ -64,8 +62,6 @@
  doom-font (font-spec :family "JetBrains Mono" :size 17)
  doom-unicode-font (font-spec :family "JetBrains Mono" :size 17)
 
- ;; org-journal
- org-journal-file-type 'weekly
 
  ;; elpa
  package-archives
@@ -183,10 +179,3 @@
       )
     )
   (add-hook 'web-mode-hook 'custom-web-mode-hook))
-
-(after! org
-  (add-to-list 'org-capture-templates
-               '("w" "Work todo" entry
-                 (file+headline "work.org" "Inbox")
-                 "* TODO %?" :prepend t :kill-buffer t))
-  )
