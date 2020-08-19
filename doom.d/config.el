@@ -1,5 +1,7 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
+(load! "+org")
+
 ;; evil-snipe
 (after! evil-snipe
   (evil-snipe-mode -1))
