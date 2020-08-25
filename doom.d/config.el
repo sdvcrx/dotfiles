@@ -60,15 +60,7 @@
  ;; font
  ;; yay -S ttf-jetbrains-mono
  doom-font (font-spec :family "JetBrains Mono" :size 17)
- doom-unicode-font (font-spec :family "JetBrains Mono" :size 17)
-
-
- ;; elpa
- package-archives
- '(("melpa" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-   ("org"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
-   ("gnu"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))
-)
+ doom-unicode-font (font-spec :family "JetBrains Mono" :size 17))
 
 ;; keybindings
 (map!
