@@ -51,7 +51,7 @@
  lsp-eslint-auto-fix-on-save t
  lsp-eslint-server-command
  `("node"
-   ,(expand-file-name "~/.vscode-oss/extensions/dbaeumer.vscode-eslint-2.1.5/server/out/eslintServer.js")
+   ,(expand-file-name "~/.vscode-oss/extensions/dbaeumer.vscode-eslint-2.1.8/server/out/eslintServer.js")
    "--stdio")
 
  ;; doom
@@ -147,6 +147,7 @@
 
   (setq
    lsp-gopls-hover-kind "SingleLine"
+   lsp-gopls-codelens nil
    lsp-gopls-use-placeholders nil)
 
   (map! :map go-mode-map
