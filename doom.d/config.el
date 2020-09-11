@@ -1,6 +1,7 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
 (load! "+org")
+(load! "+chinese")
 
 ;; evil-snipe
 (after! evil-snipe
