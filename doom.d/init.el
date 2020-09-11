@@ -101,9 +101,7 @@
        ;;gist              ; interacting with github gists
        (lookup              ; navigate your code and its documentation
         +docsets)
-       (lsp
-        +eglot
-        )
+       lsp
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
