@@ -12,6 +12,3 @@
  ;; org-journal
  org-journal-file-type 'weekly
  )
-
-(use-package! valign
-  :hook (org-mode . valign-mode))
