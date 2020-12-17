@@ -1,0 +1,65 @@
+#!/bin/zsh
+
+bindkey "^p" up-line-or-search
+bindkey "^n" down-line-or-search
+
+###
+# Alias
+###
+alias ll='exa -l'
+alias ls='exa'
+alias la='exa -al'
+alias l='exa'
+
+alias grep='grep -i --color=auto'
+alias egrep='grep -E --color=auto'
+alias fgrep='grep -F --color=auto'
+alias yaupg='yay -Syu'
+alias yi='yay -S'
+alias ys='yay -Ss'
+alias cat='bat'
+
+alias ag='rg'
+
+alias mutt='TERM=screen-256color mutt'
+alias px='proxychains4'
+
+# tmux and 256color
+alias tmux="tmux -2"
+
+# inherit user alias https://www.gaojinan.com/pass-alias-to-sudo-shell.html
+alias sudo='sudo '
+
+# THanks https://robots.thoughtbot.com/my-life-with-neovim
+if type nvim > /dev/null 2>&1; then
+    alias vim='nvim'
+fi
+
+# fzf
+export FZF_DEFAULT_COMMAND='rg --hidden --ignore .git -g ""'
+# Setting fd as the default source for fzf
+export FZF_DEFAULT_COMMAND='fd --type f'
+
+fe() {
+  IFS='
+'
+  local declare files=($(fzf --query="$1" --select-1 --exit-0))
+  [[ -n "$files" ]] && nvim "${files[@]}"
+  unset IFS
+}
+
+if [[ $TERM == xterm-termite  ]]; then
+    export TERM=xterm-256color
+fi
+
+# prompt command not found
+# `yaourt -S pkgfile` is required
+pkgfile=/usr/share/doc/pkgfile/command-not-found.zsh
+if [[ -e "$pkgfile" ]]; then
+  source "$pkgfile"
+fi
+
+# ssh agent
+eval $(keychain --systemd --eval --quiet id_ed25519)
+
+alias rdp='rdesktop -g 1360x760 -P -z -K -x l -r clipboard:PRIMARYCLIPBOARD 127.0.0.1'
