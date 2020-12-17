@@ -20,3 +20,14 @@ Add a dotfile by copying
     mkrc -v -C files
 
 More usages: https://thoughtbot.github.io/rcm/rcm.7.html
+
+## packages ##
+
+- zsh
+- zplug
+- fzf
+- ripgrep
+- fd
+- proxychains-ng
+- yay
+- neovim
