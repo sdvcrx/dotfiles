@@ -86,8 +86,8 @@
    (:prefix "b"
      :desc "Kill buffer" :n "d" #'doom/kill-this-buffer-in-all-windows)
    (:prefix "g"
-     :desc "Magit dispatch" :n "m" #'magit-dispatch-popup)
-   )
+    :desc "Magit dispatch" :n "m" #'magit-dispatch-popup)
+   :desc "Org roam" "r" (general-simulate-key "SPC n r"))
  )
 
 (after! centaur-tabs
