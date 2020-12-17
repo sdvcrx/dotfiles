@@ -95,9 +95,10 @@ function loadv() {
 
 
 #======== Alias =============#
-alias ll='ls -hl --color=auto'
-alias ls='ls --color=auto'
-alias l='ls --color=auto'
+alias ls='exa'
+alias ll='exa -l'
+alias la='exa -al'
+alias l='exa'
 
 alias grep='grep -i --color=auto'
 alias egrep='grep -E --color=auto'
@@ -183,3 +184,5 @@ alias rdp='rdesktop -g 1360x760 -P -z -K -x l -r clipboard:PRIMARYCLIPBOARD 127.
 
 # inherit user alias https://www.gaojinan.com/pass-alias-to-sudo-shell.html
 alias sudo='sudo '
+
+alias cat='bat'
