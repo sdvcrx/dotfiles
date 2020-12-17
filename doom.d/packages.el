@@ -6,5 +6,7 @@
 
 (package! valign :recipe (:host github :repo "casouri/valign"))
 
+(package! wakatime-mode)
+
 (package! rime
   :recipe (:host github :repo "DogLooksGood/emacs-rime"))
