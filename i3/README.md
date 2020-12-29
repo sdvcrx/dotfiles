@@ -11,7 +11,7 @@ yay -S i3-gaps-next-git i3lock-color-git i3lock-fancier-rapid i3status i3-blocks
 yay -S ttf-ubuntu-font-family otf-font-awesome ttf-ubuntu-mono-derivative-powerline-git
 
 # tool
-yay -S pcmanfm-qt-git flameshot fcitx fcitx-rime yakuake termite
+yay -S pcmanfm-qt-git flameshot fcitx fcitx-rime yakuake termite lm_sensors
 ```
 
 ### Generate screen layout ###
