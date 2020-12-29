@@ -19,3 +19,5 @@
 	user = sdvcrx
 [commit]
 	gpgsign = true
+[pull]
+	ff = only
