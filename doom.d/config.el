@@ -48,6 +48,10 @@
  evil-escape-key-sequence "jj"
  evil-escape-delay 0.3
 
+ ;; lsp-ui
+ lsp-ui-sideline-enable nil
+ lsp-ui-sideline-show-hover nil
+
  ;; lsp-eslint
  lsp-eslint-run "onSave"
  lsp-eslint-auto-fix-on-save t
