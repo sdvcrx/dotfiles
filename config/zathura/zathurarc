@@ -2,4 +2,3 @@ map <C-i> zoom in
 map <C-o> zoom out
 set adjust-open "width"
 set guioptions ""
-set window-icon "/home/memory/Pictures/zathura.png"
