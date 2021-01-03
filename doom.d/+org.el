@@ -11,4 +11,9 @@
  org-directory "~/Documents/org/"
  ;; org-journal
  org-journal-file-type 'weekly
+
+ ;; deft
+ deft-directory "~/Documents/org/"
+ deft-default-extension "org"
+ deft-recursive t
  )
