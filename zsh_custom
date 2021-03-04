@@ -18,6 +18,7 @@ alias yaupg='yay -Syu'
 alias yi='yay -S'
 alias ys='yay -Ss'
 alias cat='bat'
+alias ip='ip -color'
 
 alias ag='rg'
 
