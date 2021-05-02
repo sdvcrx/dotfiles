@@ -38,6 +38,9 @@
  ;; modeline
  doom-modeline-buffer-file-name-style 'relative-to-project
 
+ ;; treemacs theme
+ doom-themes-treemacs-theme "doom-colors"
+
  ;; tabs
  centaur-tabs-set-bar 'under
  x-underline-at-descent-line t
@@ -65,6 +68,8 @@
 
  ;; font
  ;; yay -S ttf-jetbrains-mono
+ doom-themes-enable-bold t
+ doom-themes-enable-italic t
  doom-font (font-spec :family "JetBrains Mono" :size 17)
  doom-unicode-font (font-spec :family "JetBrains Mono" :size 17))
 
