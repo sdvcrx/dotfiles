@@ -6,7 +6,7 @@ yay -S fd ripgrep
 ** JavaScript/Vue
 Install =lsp-eslint-server= ：
 
-<kbd>M-x</kbd> =lsp-install-server= <kbd>RET</kbd> =eslint= <kbd>RET</kbd>
+=M-x lsp-install-server= and enter =eslint=
 
 ** Go
 #+begin_src shell
