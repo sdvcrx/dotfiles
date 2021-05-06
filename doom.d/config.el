@@ -84,6 +84,11 @@
  ;; Override C-w delete-word
  :gi "C-w" #'evil-delete-backward-word
 
+ (:when (featurep! :ui tabs)
+  :g "M-h" #'centaur-tabs-backward
+  :g "M-l" #'centaur-tabs-forward
+  )
+
  (:leader
    (:prefix "f"
      :desc "Save buffer" :n "s" #'save-buffer
