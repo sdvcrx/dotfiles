@@ -1,0 +1,23 @@
+* Install Deps
+** System Tools
+#+begin_src shell
+yay -S fd ripgrep
+#+end_src
+** JavaScript/Vue
+Install =lsp-eslint-server= ：
+
+<kbd>M-x</kbd> =lsp-install-server= <kbd>RET</kbd> =eslint= <kbd>RET</kbd>
+
+** Go
+#+begin_src shell
+go get -u github.com/motemen/gore/cmd/gore
+go get -u golang.org/x/tools/cmd/godoc
+go get -u golang.org/x/tools/cmd/goimports
+go get -u golang.org/x/tools/cmd/gorename
+go get -u golang.org/x/tools/cmd/guru
+go get -u github.com/cweill/gotests/...
+go get -u github.com/fatih/gomodifytags
+
+# gopls
+go get golang.org/x/tools/gopls@latest
+#+end_src

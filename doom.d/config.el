@@ -58,10 +58,6 @@
  ;; lsp-eslint
  lsp-eslint-run "onSave"
  lsp-eslint-auto-fix-on-save t
- lsp-eslint-server-command
- `("node"
-   ,(expand-file-name "~/.vscode-oss/extensions/dbaeumer.vscode-eslint-2.1.8/server/out/eslintServer.js")
-   "--stdio")
 
  ;; doom
  doom-localleader-key ","
