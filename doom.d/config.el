@@ -2,7 +2,7 @@
 
 (load! "+org")
 (load! "+chinese")
-(load! "+extra")
+; (load! "+extra")
 
 ;; evil-snipe
 (after! evil-snipe
@@ -117,8 +117,7 @@
 
  (:when (featurep! :ui tabs)
   :g "M-h" #'centaur-tabs-backward
-  :g "M-l" #'centaur-tabs-forward
-  )
+  :g "M-l" #'centaur-tabs-forward)
 
  (:leader
    (:prefix "f"
@@ -128,8 +127,7 @@
      :desc "Kill buffer" :n "d" #'doom/kill-this-buffer-in-all-windows)
    (:prefix "g"
     :desc "Magit dispatch" :n "m" #'magit-dispatch-popup)
-   :desc "Org roam" "r" (general-simulate-key "SPC n r"))
- )
+   :desc "Org roam" "r" (general-simulate-key "SPC n r")))
 
 (after! centaur-tabs
   (defun centaur-tabs-hide-tab (x)
