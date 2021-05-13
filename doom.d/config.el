@@ -41,6 +41,9 @@
  ;; treemacs theme
  doom-themes-treemacs-theme "doom-colors"
 
+ history-length 1000
+ prescient-history-length 1000
+
  ;; tabs
  centaur-tabs-set-bar 'under
  x-underline-at-descent-line t
