@@ -60,14 +60,30 @@
  lsp-eslint-auto-fix-on-save t
 
  ;; doom
- doom-localleader-key ","
+ doom-localleader-key ",")
 
- ;; font
- ;; yay -S ttf-jetbrains-mono
+;; font
+;; yay -S ttf-jetbrains-mono
+(setq font-size 18)
+;; 4K => base-font-size * 2
+(when (>= (display-pixel-width) 3840)
+  (setq font-size (* font-size 2)))
+
+(setq
  doom-themes-enable-bold t
  doom-themes-enable-italic t
- doom-font (font-spec :family "JetBrains Mono" :size 17)
- doom-unicode-font (font-spec :family "JetBrains Mono" :size 17))
+
+ ;; doom-serif-font (font-spec :family "IBM Plex Mono" :weight 'light)
+ doom-font (font-spec :family "JetBrains Mono" :size font-size)
+ doom-unicode-font (font-spec :family "JetBrains Mono"))
+
+;; https://github.com/laishulu/Sarasa-Mono-SC-Nerd
+(when (find-font (font-spec :name "Sarasa Mono SC Nerd"))
+  (setq
+   ;; doom-variable-pitch-font (font-spec :family "Sarasa Mono SC Nerd")
+   doom-variable-pitch-font (font-spec :family "JetBrains Mono")
+   doom-big-font (font-spec :family "Sarasa Mono SC Nerd" :size (* font-size 1.5))
+   doom-unicode-font (font-spec :family "Sarasa Mono SC Nerd")))
 
 ;; modeline
 ;; Copy from https://tecosaur.github.io/emacs-config/config.html#theme-modeline
