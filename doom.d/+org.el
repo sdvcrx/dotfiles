@@ -16,11 +16,30 @@
   (run-at-time nil nil #'org-appear--set-elements))
 
 (after! org
+  ;; https://tecosaur.github.io/emacs-config/config.html#font-display
+  (custom-set-faces!
+    '(outline-1 :weight extra-bold)
+    '(outline-2 :weight bold)
+    '(outline-3 :weight bold)
+    '(outline-4 :weight semi-bold)
+    '(outline-5 :weight semi-bold)
+    '(outline-6 :weight semi-bold)
+    '(outline-8 :weight semi-bold)
+    '(outline-9 :weight semi-bold))
+  (setq org-fontify-quote-and-verse-blocks t)
+
   (add-to-list 'org-capture-templates
                '("w" "Work todo" entry
                  (file+headline "work.org" "Inbox")
-                 "* TODO %?" :prepend t :kill-buffer t))
-  )
+                 "* TODO %?" :prepend t :kill-buffer t)))
+
+(defun locally-defer-font-lock ()
+  "Set jit-lock defer and stealth, when buffer is over a certain size."
+  (when (> (buffer-size) 50000)
+    (setq-local jit-lock-defer-time 0.05
+                jit-lock-stealth-time 1)))
+
+(add-hook 'org-mode-hook #'locally-defer-font-lock)
 
 (add-hook! 'org-mode-hook #'+org-pretty-mode #'mixed-pitch-mode)
 
@@ -28,6 +47,12 @@
  org-directory "~/Documents/org/"
  ;; org-journal
  org-journal-file-type 'weekly
+
+ ;; run export processes in external emacs process
+ org-export-in-background t
+
+ org-ellipsis " ▾ "
+ org-hide-leading-stars t
 
  ;; deft
  deft-directory "~/Documents/org/"

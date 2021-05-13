@@ -49,6 +49,8 @@
  x-underline-at-descent-line t
  centaur-tabs-height 32
 
+ +ligatures-extras-in-modes '(org-mode)
+
  ;; evil
  ;; map jj to <ESC>
  evil-escape-key-sequence "jj"
