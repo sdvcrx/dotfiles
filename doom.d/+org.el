@@ -4,12 +4,25 @@
   :hook (org-mode . valign-mode)
   :config (setq valign-fancy-bar 'non-nil))
 
+;; https://tecosaur.github.io/emacs-config/config.html#font-display
+(use-package! org-appear
+  :hook (org-mode . org-appear-mode)
+  :config
+  (setq org-appear-autoemphasis t
+        org-appear-autosubmarkers t
+        org-appear-autolinks nil)
+  ;; for proper first-time setup, `org-appear--set-elements'
+  ;; needs to be run after other hooks have acted.
+  (run-at-time nil nil #'org-appear--set-elements))
+
 (after! org
   (add-to-list 'org-capture-templates
                '("w" "Work todo" entry
                  (file+headline "work.org" "Inbox")
                  "* TODO %?" :prepend t :kill-buffer t))
   )
+
+(add-hook! 'org-mode-hook #'+org-pretty-mode #'mixed-pitch-mode)
 
 (setq-default
  org-directory "~/Documents/org/"

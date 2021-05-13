@@ -8,5 +8,6 @@
 
 (package! wakatime-mode)
 
-(package! rime
-  :recipe (:host github :repo "DogLooksGood/emacs-rime"))
+(package! rime :recipe (:host github :repo "DogLooksGood/emacs-rime"))
+
+(package! org-appear :recipe (:host github :repo "awth13/org-appear") :pin "6ee49875f8...")
