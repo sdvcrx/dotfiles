@@ -45,9 +45,13 @@
  prescient-history-length 1000
 
  ;; tabs
- centaur-tabs-set-bar 'under
- x-underline-at-descent-line t
- centaur-tabs-height 32
+ centaur-tabs-set-bar 'over
+ centaur-tabs-set-icons t
+ centaur-tabs-gray-out-icons 'buffer
+ centaur-tabs-height 24
+ centaur-tabs-set-modified-marker t
+ centaur-tabs-style "bar"
+ centaur-tabs-modified-marker "•"
 
  +ligatures-extras-in-modes '(org-mode)
 
