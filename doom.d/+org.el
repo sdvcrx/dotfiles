@@ -1,5 +1,9 @@
 ;;;  -*- lexical-binding: t; -*-
 
+(use-package! valign
+  :hook (org-mode . valign-mode)
+  :config (setq valign-fancy-bar 'non-nil))
+
 (after! org
   (add-to-list 'org-capture-templates
                '("w" "Work todo" entry
