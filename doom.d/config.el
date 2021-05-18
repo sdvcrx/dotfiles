@@ -28,7 +28,7 @@
 (pushnew! initial-frame-alist
           '(width . 85)
           '(height . 40)
-          '(left . 0)
+          '(right . 0)
           '(bottom . 0))
 
 (setq-default
