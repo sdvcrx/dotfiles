@@ -69,7 +69,8 @@
  lsp-eslint-auto-fix-on-save t
 
  ;; doom
- doom-localleader-key ",")
+ doom-localleader-key ","
+ doom-localleader-alt-key "M-,")
 
 ;; font
 ;; yay -S ttf-jetbrains-mono
