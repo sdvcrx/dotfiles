@@ -6,8 +6,8 @@
 
 (package! valign :recipe (:host github :repo "casouri/valign"))
 
-(package! wakatime-mode)
-
 (package! rime :recipe (:host github :repo "DogLooksGood/emacs-rime"))
 
 (package! org-appear :recipe (:host github :repo "awth13/org-appear"))
+
+(package! screenshot :recipe (:host github :repo "tecosaur/screenshot"))

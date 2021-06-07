@@ -2,7 +2,7 @@
 
 (load! "+org")
 (load! "+chinese")
-; (load! "+extra")
+(load! "+extra")
 
 ;; evil-snipe
 (after! evil-snipe
