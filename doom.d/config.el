@@ -64,6 +64,11 @@
  lsp-ui-sideline-enable nil
  lsp-ui-sideline-show-hover nil
 
+ ;; doc
+ ;; lsp-ui-doc-enable nil
+ lsp-ui-doc-show-with-cursor nil
+ ;; lsp-ui-doc-show-with-mouse nil
+
  ;; lsp-eslint
  lsp-eslint-run "onSave"
  lsp-eslint-auto-fix-on-save t
