@@ -59,6 +59,9 @@
  ;; map jj to <ESC>
  evil-escape-key-sequence "jj"
  evil-escape-delay 0.3
+ evil-want-fine-undo t
+
+ scroll-margin 2
 
  ;; lsp-ui
  lsp-ui-sideline-enable nil
