@@ -205,7 +205,9 @@
           "i" #'go-import-add
           "a" #'go-import-add
           "r" #'go-remove-unused-imports
-          "g" #'go-goto-imports)))
+          "g" #'go-goto-imports)
+        (:prefix ("t" . "tests")
+         "v" #'+go/test-single-verbose)))
 
 ;; vue / FE
 (after! web-mode
