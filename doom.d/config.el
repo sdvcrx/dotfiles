@@ -5,8 +5,7 @@
 (load! "+extra")
 
 ;; evil-snipe
-(after! evil-snipe
-  (evil-snipe-mode -1))
+(remove-hook 'doom-first-input-hook #'evil-snipe-mode)
 
 ;; company
 (after! company
