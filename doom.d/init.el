@@ -161,7 +161,7 @@
         +dragndrop       ; drag & drop files/images into org buffers
         +journal
         +pretty
-        +roam
+        +roam2
         ;;+hugo            ; use Emacs for hugo blogging
         ;;+jupyter        ; ipython/jupyter support for babel
         ;;+pandoc          ; export-with-pandoc support
