@@ -2,3 +2,6 @@
 
 (use-package! screenshot
   :defer t)
+
+(use-package! wakatime-mode
+  :hook (doom-first-buffer . global-wakatime-mode))

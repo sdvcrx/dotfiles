@@ -11,3 +11,5 @@
 (package! org-appear :recipe (:host github :repo "awth13/org-appear"))
 
 (package! screenshot :recipe (:host github :repo "tecosaur/screenshot"))
+
+(package! wakatime-mode)
