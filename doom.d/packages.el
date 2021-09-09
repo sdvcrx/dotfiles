@@ -13,3 +13,8 @@
 (package! screenshot :recipe (:host github :repo "tecosaur/screenshot"))
 
 (package! wakatime-mode)
+
+;; org-roam-ui
+(unpin! org-roam)
+(package! websocket)
+(package! org-roam-ui :recipe (:host github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
