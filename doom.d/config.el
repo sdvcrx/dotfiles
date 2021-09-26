@@ -83,7 +83,7 @@
 ;; yay -S ttf-jetbrains-mono
 (setq font-size 18)
 ;; 4K => base-font-size * 2
-(when (>= (display-pixel-width) 3840)
+(when (>= (car (last (frame-monitor-geometry))) 2160)
   (setq font-size (* font-size 2)))
 
 (setq
