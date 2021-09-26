@@ -21,7 +21,7 @@ Add a dotfile by copying
 
 More usages: https://thoughtbot.github.io/rcm/rcm.7.html
 
-## packages ##
+## Packages ##
 
 - zsh
 - zplug
@@ -31,3 +31,12 @@ More usages: https://thoughtbot.github.io/rcm/rcm.7.html
 - proxychains-ng
 - yay
 - neovim
+
+## Fonts ##
+
+- noto-fonts-emoji
+- noto-fonts-cjk
+- noto-fonts
+- wqy-zenhei
+- wqy-microhei
+- [Sarasa-Mono-SC-Nerd](https://github.com/laishulu/Sarasa-Mono-SC-Nerd)
