@@ -16,7 +16,7 @@ zplug "romkatv/powerlevel10k", as:theme, use:config/p10k-robbyrussell.zsh
 
 zplug "agkozak/zsh-z"
 
-zplug "zdharma/fast-syntax-highlighting"
+zplug "zdharma-continuum/fast-syntax-highlighting"
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
