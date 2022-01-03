@@ -28,6 +28,14 @@
   ;; needs to be run after other hooks have acted.
   (run-at-time nil nil #'org-appear--set-elements))
 
+;; https://tecosaur.github.io/emacs-config/config.html#heading-structure
+(use-package! org-ol-tree
+  :commands org-ol-tree)
+(map! :map org-mode-map
+      :after org
+      :localleader
+      :desc "Outline" "O" #'org-ol-tree)
+
 (after! org
   ;; https://tecosaur.github.io/emacs-config/config.html#font-display
   (custom-set-faces!
