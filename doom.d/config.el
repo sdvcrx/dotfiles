@@ -141,6 +141,11 @@
      :desc "Kill buffer" :n "d" #'doom/kill-this-buffer-in-all-windows)
    (:prefix "g"
     :desc "Magit dispatch" :n "m" #'magit-dispatch-popup)
+   (:prefix-map ("n" . "notes")
+    (:when (featurep! :lang org +roam2)
+     (:prefix ("r" . "roam")
+      :desc "Search org roam"              "s" #'+default/org-roam-search
+      )))
    :desc "Org roam" "r" (general-simulate-key "SPC n r")))
 
 (after! centaur-tabs
