@@ -27,6 +27,7 @@
         ;;+prescient
         +icons
         +fuzzy)
+       ;;vertico           ; the search engine of the future
 
        :ui
        deft              ; notational velocity for Emacs
@@ -51,7 +52,7 @@
         +defaults)
        tabs              ; a tab bar for Emacs
        treemacs          ; a project drawer, like neotree but cooler
-       unicode           ; extended unicode support for various languages
+       ;;unicode           ; extended unicode support for various languages
        vc-gutter         ; vcs diff in the fringe
        vi-tilde-fringe   ; fringe tildes to mark beyond EOB
        window-select     ; visually switch windows
@@ -94,7 +95,8 @@
 
        :tools
        ansible
-       debugger          ; FIXME stepping through code, to help you add bugs
+       (debugger          ; FIXME stepping through code, to help you add bugs
+        +lsp)
        ;;direnv
        docker
        editorconfig      ; let someone else argue about tabs vs spaces
@@ -130,6 +132,7 @@
        ;;csharp            ; unity, .NET, and mono shenanigans
        data              ; config/data formats
        ;;(dart +flutter)   ; paint ui and not much else
+       ;;dhall
        ;;elixir            ; erlang done right
        ;;elm               ; care for a cup of TEA?
        emacs-lisp        ; drown in parentheses
@@ -141,12 +144,13 @@
        ;;fstar             ; (dependent) types and (monadic) effects and Z3
        ;;gdscript          ; the language you waited for
        (go +lsp)         ; the hipster dialect
-       ;;(haskell +dante)  ; a language that's lazier than I am
+       ;;(haskell +lsp)    ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ; a language you can depend on
        ;;json              ; At least it ain't XML
        ;;(java +meghanada) ; the poster child for carpal tunnel syndrome
-       javascript        ; all(hope(abandon(ye(who(enter(here))))))
+       (javascript        ; all(hope(abandon(ye(who(enter(here))))))
+        +lsp)
        ;;julia             ; a better, faster MATLAB
        ;;kotlin            ; a better, slicker Java(Script)
        ;;latex             ; writing papers in Emacs has never been so fun
