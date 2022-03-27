@@ -95,7 +95,7 @@
  doom-unicode-font (font-spec :family "JetBrains Mono"))
 
 ;; https://github.com/laishulu/Sarasa-Mono-SC-Nerd
-(when (find-font (font-spec :name "Sarasa Mono SC Nerd"))
+(when (doom-font-exists-p "Sarasa Mono SC Nerd")
   (setq
    ;; doom-variable-pitch-font (font-spec :family "Sarasa Mono SC Nerd")
    doom-variable-pitch-font (font-spec :family "JetBrains Mono")
@@ -125,6 +125,7 @@
  ;; enhance
  :n ";" 'evil-ex
  :n "C-/" 'swiper   ;; Ctrl+/
+ :i "C-v" #'yank
 
  ;; Override C-w delete-word
  :gi "C-w" #'evil-delete-backward-word
@@ -189,9 +190,8 @@
        (string-prefix-p "*Article" name)
        (string-prefix-p "*mu4e" name)
 
-       ;; Is not magit buffer.
-       (and (string-prefix-p "magit" name)
-            (not (file-name-extension name)))
+       ;; magit
+       (string-prefix-p "magit" name)
        )))
   )
 ;;

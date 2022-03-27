@@ -8,5 +8,8 @@
   (rime-disable-predicates
    '(rime-predicate-evil-mode-p
      rime-predicate-after-alphabet-char-p
+     rime-predicate-org-in-src-block-p
+     rime-predicate-in-code-string-p
      rime-predicate-prog-in-code-p))
+  (rime-inline-ascii-trigger 'shift-l)
   (rime-user-data-dir "~/.local/share/fcitx5/rime"))

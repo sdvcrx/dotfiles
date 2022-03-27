@@ -17,7 +17,7 @@
   :hook (org-mode . valign-mode)
   :config (setq valign-fancy-bar 'non-nil))
 
-;; https://tecosaur.github.io/emacs-config/config.html#font-display
+;; https://tecosaur.github.io/emacs-config/config.html#emphasis-markers
 (use-package! org-appear
   :hook (org-mode . org-appear-mode)
   :config
