@@ -15,6 +15,8 @@
 
 (package! wakatime-mode)
 
+(package! go-impl)
+
 ;; org-roam-ui
 (unpin! org-roam)
 (package! websocket)
