@@ -239,8 +239,13 @@
   (defun custom-web-mode-hook ()
     "Hooks for Web mode."
     (setq
-      web-mode-style-padding 0
-      web-mode-script-padding 0
-      )
-    )
-  (add-hook 'web-mode-hook 'custom-web-mode-hook))
+     web-mode-style-padding 0
+     web-mode-script-padding 0))
+
+  ;; https://github.com/editorconfig/editorconfig-emacs#editorconfig-after-apply-functions
+  ;; https://github.com/editorconfig/editorconfig-emacs/issues/79
+  (add-hook! 'editorconfig-after-apply-functions
+    (defun +editorconfig-set-web-mode-indent-h (props)
+      (custom-web-mode-hook)))
+
+  (add-hook! 'web-mode-hook 'custom-web-mode-hook))
