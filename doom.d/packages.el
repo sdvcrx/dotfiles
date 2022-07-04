@@ -15,6 +15,7 @@
 
 (package! wakatime-mode)
 
+(package! protobuf-mode)
 (package! go-impl)
 
 ;; org-roam-ui
