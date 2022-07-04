@@ -11,7 +11,8 @@
 (package! org-appear :recipe (:host github :repo "awth13/org-appear"))
 (package! org-ol-tree :recipe (:host github :repo "Townk/org-ol-tree"))
 
-(package! screenshot :recipe (:host github :repo "tecosaur/screenshot"))
+;; https://github.com/tecosaur/screenshot/issues/11
+(package! screenshot :recipe (:host github :repo "tecosaur/screenshot" :build (:not compile)))
 
 (package! wakatime-mode)
 
