@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Vue computed block
+# key: comp
+# condition: (equal web-mode-engine "vue")
+# --
+computed: {
+  $0 () {
+  },
+},

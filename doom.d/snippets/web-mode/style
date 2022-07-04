@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Vue scss style
+# key: scss
+# condition: (equal web-mode-engine "vue")
+# --
+<style lang="scss">
+$0
+</style>

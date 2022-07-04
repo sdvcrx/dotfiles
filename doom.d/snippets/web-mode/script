@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Vue script block
+# key: script
+# condition: (equal web-mode-engine "vue")
+# --
+<script>
+export default {
+  name: '$1',$2
+};
+</script>

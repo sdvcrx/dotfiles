@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Vue methods block
+# key: method
+# condition: (equal web-mode-engine "vue")
+# --
+methods: {
+  $0 () {
+  },
+},

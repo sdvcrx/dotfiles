@@ -17,11 +17,11 @@
 (after! flycheck
   (setq flycheck-idle-change-delay 5))
 
-(after! yasnippet
-  (push "~/.doom.d/templates" yas-snippet-dirs)
-  (set-file-template! "\\.vue$" ':trigger "__.vue" :mode 'web-mode)
-  (yas-reload-all)
-  )
+;; (after! yasnippet
+;;   (push "~/.doom.d/templates" yas-snippet-dirs)
+;;   (set-file-template! "\\.vue$" ':trigger "__.vue" :mode 'web-mode)
+;;   (yas-reload-all)
+;;   )
 
 ;; set initial frame size
 (pushnew! initial-frame-alist

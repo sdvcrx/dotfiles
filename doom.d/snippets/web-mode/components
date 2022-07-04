@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Vue components block
+# key: comp
+# condition: (equal web-mode-engine "vue")
+# --
+components: {
+    $1,
+},
