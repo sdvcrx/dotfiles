@@ -3,6 +3,7 @@
 (load! "+org")
 (load! "+chinese")
 (load! "+extra")
+(load! "+macos")
 
 ;; evil-snipe
 (remove-hook 'doom-first-input-hook #'evil-snipe-mode)
@@ -126,6 +127,7 @@
  :n ";" 'evil-ex
  :n "C-/" 'swiper   ;; Ctrl+/
  :i "C-v" #'yank
+ :i "M-v" #'yank
 
  ;; Override C-w delete-word
  :gi "C-w" #'evil-delete-backward-word
