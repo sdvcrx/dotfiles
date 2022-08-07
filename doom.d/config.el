@@ -194,6 +194,7 @@
 
        ;; magit
        (string-prefix-p "magit" name)
+       (string-prefix-p "*compilation" name)
        )))
   )
 ;;
