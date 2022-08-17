@@ -76,6 +76,9 @@
  lsp-eslint-run "onSave"
  lsp-eslint-auto-fix-on-save t
 
+ ;; lsp vue
+ lsp-volar-take-over-mode nil
+
  ;; doom
  doom-localleader-key ","
  doom-localleader-alt-key "M-,")
