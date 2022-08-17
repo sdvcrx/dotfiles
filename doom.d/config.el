@@ -139,7 +139,7 @@
  ;; Override C-w delete-word
  :gi "C-w" #'evil-delete-backward-word
 
- (:when (featurep! :ui tabs)
+ (:when (modulep! :ui tabs)
   :g "M-h" #'centaur-tabs-backward
   :g "M-l" #'centaur-tabs-forward)
 
@@ -152,7 +152,7 @@
    (:prefix "g"
     :desc "Magit dispatch" :n "m" #'magit-dispatch-popup)
    (:prefix-map ("n" . "notes")
-    (:when (featurep! :lang org +roam2)
+    (:when (modulep! :lang org +roam2)
      (:prefix ("r" . "roam")
       :desc "Search org roam"              "s" #'+default/org-roam-search
       )))
