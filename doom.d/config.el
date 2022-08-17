@@ -63,6 +63,10 @@
 
  scroll-margin 2
 
+ ;; lsp company
+ ;; don't show lsp completion with yasnippet
+ +lsp-company-backends 'company-capf
+
  ;; lsp-ui
  lsp-ui-sideline-enable nil
  lsp-ui-sideline-show-hover nil
