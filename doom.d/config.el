@@ -61,7 +61,7 @@
  evil-escape-delay 0.3
  evil-want-fine-undo t
 
- scroll-margin 2
+ scroll-margin 5
 
  ;; lsp company
  ;; don't show lsp completion with yasnippet
