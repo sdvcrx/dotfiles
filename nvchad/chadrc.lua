@@ -45,6 +45,11 @@ M.plugins = {
         require('go').setup()
       end,
     },
+    ["nvim-telescope/telescope.nvim"] = {
+      requires = {
+        "nvim-telescope/telescope-project.nvim",
+      },
+    },
   },
   override = {
     ["nvim-telescope/telescope.nvim"] = configs.telescope,

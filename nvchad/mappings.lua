@@ -42,6 +42,10 @@ M.user = {
       "<cmd> Telescope grep_string <CR>", "Search keyword under cursor",
     },
 
+    ["<leader>pp"] = {
+      "<cmd> Telescope project <CR>", "Switch projectes",
+    },
+
     -- nvterm
     ["<leader>ot"] = {
       function()

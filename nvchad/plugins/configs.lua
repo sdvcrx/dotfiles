@@ -24,6 +24,7 @@ M.telescope = {
       find_command = { "rg", "--files", "--hidden", "--glob", "!.git/*" },
     },
   },
+  extensions_list = { "themes", "terms", "project" },
 }
 
 M.mason = {
