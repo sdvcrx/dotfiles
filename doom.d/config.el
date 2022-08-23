@@ -204,6 +204,10 @@
        (string-prefix-p "*compilation" name)
        )))
   )
+
+(after! magit
+  (setq magit-section-initial-visibility-alist '((untracked . hide) (stashes . hide))))
+
 ;;
 ;; language spec keybindings
 ;;
