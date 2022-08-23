@@ -8,11 +8,18 @@ M.telescope = {
           require("telescope.actions").close(prompt_bufnr)
         end,
         ["<C-u>"] = false,
+        ["<C-j>"] = function (prompt_bufnr)
+          require("telescope.actions").move_selection_next(prompt_bufnr)
+        end,
+        ["<C-k>"] = function (prompt_bufnr)
+          require("telescope.actions").move_selection_previous(prompt_bufnr)
+        end,
       }
     },
   },
   pickers = {
     find_files = {
+      theme = "ivy",
       -- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
       find_command = { "rg", "--files", "--hidden", "--glob", "!.git/*" },
     },
