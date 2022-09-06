@@ -50,6 +50,11 @@ M.plugins = {
         "nvim-telescope/telescope-project.nvim",
       },
     },
+    ["ethanholz/nvim-lastplace"] = {
+      config = function ()
+        require("nvim-lastplace").setup()
+      end
+    },
   },
   override = {
     ["nvim-telescope/telescope.nvim"] = configs.telescope,
