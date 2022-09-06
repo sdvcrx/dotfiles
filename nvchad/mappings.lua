@@ -21,7 +21,7 @@ M.user = {
       "<cmd> Telescope buffers <CR>", "close buffer",
     },
 
-    ["<leader><leader>"] = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "find all" },
+    ["<leader><leader>"] = { "<cmd> Telescope find_files follow=true <CR>", "find all" },
 
     ["<leader>fs"] = { "<cmd> write <CR>", "save current buffer" },
 
