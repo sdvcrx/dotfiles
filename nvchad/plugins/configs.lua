@@ -37,6 +37,7 @@ M.mason = {
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
+    "emmet-ls",
     "json-lsp",
     "vue-language-server",
 
