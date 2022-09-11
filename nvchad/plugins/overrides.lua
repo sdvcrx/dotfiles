@@ -67,4 +67,10 @@ M.treesitter = {
   },
 }
 
+M.cmp = {
+  completion = {
+    completeopt = 'menu,menuone,noinsert'
+  },
+}
+
 return M
