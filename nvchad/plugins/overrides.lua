@@ -17,6 +17,14 @@ M.telescope = {
       }
     },
   },
+  extensions = {
+    fzf = {
+      fuzzy = true, -- false will only do exact matching
+      override_generic_sorter = false,
+      override_file_sorter = true,
+      case_mode = "smart_case",
+    },
+  },
   pickers = {
     find_files = {
       theme = "ivy",
@@ -24,7 +32,7 @@ M.telescope = {
       find_command = { "rg", "--files", "--hidden", "--glob", "!.git/*" },
     },
   },
-  extensions_list = { "themes", "terms", "project" },
+  extensions_list = { "themes", "terms", "project", "fzf" },
 }
 
 M.mason = {
