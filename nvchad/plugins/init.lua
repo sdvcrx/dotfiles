@@ -47,6 +47,10 @@ return {
   ["nvim-telescope/telescope.nvim"] = {
     requires = {
       { "nvim-telescope/telescope-project.nvim" },
+      {
+        "nvim-telescope/telescope-fzf-native.nvim",
+        run = "make",
+      },
     },
     override_options = overrides.telescope,
   },
