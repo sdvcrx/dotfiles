@@ -35,8 +35,15 @@ M.telescope = {
   extensions_list = { "themes", "terms", "project", "fzf" },
 }
 
+-- https://github.com/williamboman/mason.nvim/blob/main/PACKAGES.md
 M.mason = {
   ensure_installed = {
+    -- shell
+    "bash-language-server",
+
+    -- python
+    "pyright",
+
     -- lua stuff
     "lua-language-server",
     "stylua",
@@ -58,7 +65,14 @@ M.treesitter = {
   indent = {
     enable = true,
   },
+  -- https://github.com/nvim-treesitter/nvim-treesitter#supported-languages
   ensure_installed = {
+    -- shell
+    "bash",
+
+    -- python
+    "python",
+
     -- lua
     "lua",
 
