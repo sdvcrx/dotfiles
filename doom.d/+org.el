@@ -37,6 +37,8 @@
       :desc "Outline" "O" #'org-ol-tree)
 
 (after! org
+  ;; https://github.com/org-roam/org-roam/issues/2198
+  (setq org-fold-core-style 'overlays)
   ;; https://tecosaur.github.io/emacs-config/config.html#font-display
   (custom-set-faces!
     '(outline-1 :weight extra-bold)
