@@ -3,7 +3,7 @@
 (load! "+org")
 (load! "+chinese")
 (load! "+extra")
-(load! "+macos")
+(when IS-MAC (load! "+macos"))
 
 ;; evil-snipe
 (remove-hook 'doom-first-input-hook #'evil-snipe-mode)
