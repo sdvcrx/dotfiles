@@ -60,6 +60,8 @@
  evil-escape-key-sequence "jj"
  evil-escape-delay 0.3
  evil-want-fine-undo t
+ ;; which-key
+ which-key-idle-delay 0.5
 
  scroll-margin 5
 
