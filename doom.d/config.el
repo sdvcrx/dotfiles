@@ -206,7 +206,9 @@
   )
 
 (after! magit
-  (setq magit-section-initial-visibility-alist '((untracked . hide) (stashes . hide))))
+  (setq
+   magit-process-finish-apply-ansi-colors t
+   magit-section-initial-visibility-alist '((untracked . hide) (stashes . hide))))
 
 ;;
 ;; language spec keybindings
