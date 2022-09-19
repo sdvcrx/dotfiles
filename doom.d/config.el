@@ -215,6 +215,9 @@
    magit-process-finish-apply-ansi-colors t
    magit-section-initial-visibility-alist '((untracked . hide) (stashes . hide))))
 
+(after! projectile
+  (add-to-list 'projectile-globally-ignored-directories "^\.go/pkg$"))
+
 ;;
 ;; language spec keybindings
 ;;
