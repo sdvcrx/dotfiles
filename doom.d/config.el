@@ -60,6 +60,9 @@
  evil-escape-key-sequence "jj"
  evil-escape-delay 0.3
  evil-want-fine-undo t
+ ;;  s/../.. to by global by default
+ evil-ex-substitute-global t
+
  ;; which-key
  which-key-idle-delay 0.5
 
