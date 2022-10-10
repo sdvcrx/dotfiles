@@ -16,6 +16,8 @@
 
 ;; flycheck
 (after! flycheck
+  ;; https://www.flycheck.org/en/latest/user/syntax-checks.html#variable-flycheck-check-syntax-automatically
+  (setq flycheck-check-syntax-automatically '(mode-enabled save))
   (setq flycheck-idle-change-delay 5))
 
 ;; (after! yasnippet
