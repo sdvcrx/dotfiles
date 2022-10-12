@@ -1,0 +1,6 @@
+[Editor]
+FontFamily = "JetBrainsMono Nerd Font"
+FontSize = 16
+DisableLigatures = false
+Clipboard = true
+ModeEnablingIME = ["insert"]
