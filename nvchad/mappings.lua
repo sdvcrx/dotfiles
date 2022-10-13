@@ -55,6 +55,10 @@ M.user = {
       "<cmd> Telescope grep_string <CR>", "Search keyword under cursor",
     },
 
+    ["<leader>gb"] = {
+      "<cmd> Telescope git_branches <CR>", "Git switch branch",
+    },
+
     ["<leader>pp"] = {
       "<cmd> Telescope project <CR>", "Switch projectes",
     },

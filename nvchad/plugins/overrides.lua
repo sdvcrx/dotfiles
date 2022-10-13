@@ -2,6 +2,9 @@ local M = {}
 
 M.telescope = {
   defaults = {
+    layout_config = {
+      preview_cutoff = 3000,
+    },
     mappings = {
       i = {
         ["<esc>"] = function (prompt_bufnr)
@@ -26,6 +29,15 @@ M.telescope = {
     },
   },
   pickers = {
+    buffers = {
+      theme = "ivy",
+    },
+    live_grep = {
+      theme = "ivy",
+    },
+    git_branches = {
+      theme = "ivy",
+    },
     find_files = {
       theme = "ivy",
       -- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
