@@ -96,6 +96,16 @@ M.user = {
       end,
       "lsp implementation",
     },
+
+    ["<leader>qq"] = {
+      function ()
+        local ch = vim.fn.input("Confirm quit? [y/n] ")
+        if ch == "y" then
+          vim.cmd("qa")
+        end
+      end,
+      "Exit with user confirm"
+    },
   },
 }
 
