@@ -16,6 +16,19 @@ M.user = {
       end,
       "close buffer",
     },
+    ["<leader>b]"] = {
+      function()
+        require("nvchad_ui.tabufline").tabuflineNext()
+      end,
+      "goto next buffer",
+    },
+    ["<leader>b["] = {
+      function()
+        require("nvchad_ui.tabufline").tabuflinePrev()
+      end,
+      "goto prev buffer",
+    },
+
 
     ["<leader>bb"] = {
       "<cmd> Telescope buffers <CR>", "close buffer",
