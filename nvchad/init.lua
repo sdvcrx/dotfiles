@@ -4,8 +4,3 @@
 
 -- editor options
 require("custom/options")
-
--- neovide
-if vim.g.neovide then
-  require("custom/neovide")
-end
