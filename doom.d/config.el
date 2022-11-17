@@ -90,6 +90,9 @@
  ;; lsp vue
  lsp-volar-take-over-mode nil
 
+ ;; lsp typescript
+ lsp-clients-typescript-log-verbosity nil
+
  ;; doom
  doom-localleader-key ","
  doom-localleader-alt-key "M-,")
