@@ -39,4 +39,4 @@ More usages: https://thoughtbot.github.io/rcm/rcm.7.html
 - noto-fonts
 - wqy-zenhei
 - wqy-microhei
-- [Sarasa-Mono-SC-Nerd](https://github.com/laishulu/Sarasa-Mono-SC-Nerd)
+- [Sarasa-Term-SC-Nerd](https://github.com/laishulu/Sarasa-Term-SC-Nerd)
