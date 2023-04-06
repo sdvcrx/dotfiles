@@ -1,17 +1,20 @@
+---@type ChadrcConfig
 local M = {}
+
+-- Path to overriding theme and highlights files
+local highlights = require "custom.highlights"
 
 M.ui = {
   theme = "onedark",
-  hl_override = {
-    CursorLine = {
-      bg = "one_bg",
-    },
-  },
+  -- theme_toggle = { "onedark", "one_light" },
+
+  hl_override = highlights.override,
+  hl_add = highlights.add,
 }
 
-M.plugins = require "custom.plugins"
+M.plugins = "custom.plugins"
 
--- https://nvchad.github.io/config/Mappings
+-- check core.mappings for table structure
 M.mappings = require "custom.mappings"
 
 return M

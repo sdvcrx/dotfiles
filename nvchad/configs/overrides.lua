@@ -95,6 +95,8 @@ M.treesitter = {
     "scss",
     "javascript",
     "typescript",
+    "tsx",
+    "json",
 
     -- golang
     "go",

@@ -15,4 +15,4 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim && nvim
 
 ## Usage
 
-Run `:PackerSync` and `:MasonInstallAll`
+Run `:Lazy` and `:MasonInstallAll`

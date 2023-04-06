@@ -1,6 +1,8 @@
+-- n, v, i, t = mode names
+---@type MappingsTable
 local M = {}
 
-M.user = {
+M.general = {
   i = {
     -- emacs style key mappings
     ["<C-a>"] = { "<ESC>^i", "beginning of line" },
@@ -8,7 +10,7 @@ M.user = {
     ["<C-f>"] = { "<Right>", "move right" },
   },
   n = {
-    [";"] = { ":", "Command" },
+    [";"] = { ":", "enter command mode", opts = { nowait = true } },
 
     ["<leader>bd"] = {
       function()
