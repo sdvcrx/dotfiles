@@ -18,6 +18,8 @@ zplug "agkozak/zsh-z"
 
 zplug "zdharma-continuum/fast-syntax-highlighting"
 
+zplug "atuinsh/atuin"
+
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
     if read -q; then
