@@ -10,7 +10,6 @@ local servers = {
   "volar",
   "html",
   "cssls",
-  "emmet_ls",
   "tsserver",
 }
 
