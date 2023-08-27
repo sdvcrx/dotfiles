@@ -5,6 +5,9 @@ local autocmd = vim.api.nvim_create_autocmd
 opt.confirm = true
 opt.scrolloff = 5
 
+-- limit completion items
+opt.pumheight = 10
+
 -- golang
 autocmd("FileType", {
   pattern = "go",
@@ -14,3 +17,4 @@ autocmd("FileType", {
   end,
 })
 
+vim.api.nvim_command('autocmd BufEnter,FocusGained * checktime')

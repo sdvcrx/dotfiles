@@ -104,7 +104,15 @@ M.treesitter = {
 
 M.cmp = {
   completion = {
-    completeopt = 'menu,menuone,noinsert'
+    completeopt = 'menu,menuone,noinsert',
+    keyword_length = 2,
+  },
+  sources = {
+    { name = "nvim_lsp" },
+    { name = "buffer" },
+    { name = "luasnip", max_item_count = 4 },
+    { name = "nvim_lua" },
+    { name = "path" },
   },
 }
 

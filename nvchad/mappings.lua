@@ -2,12 +2,20 @@
 ---@type MappingsTable
 local M = {}
 
+M.disabled = {
+  n = {
+    ["<leader>b"] = { "<cmd> enew <CR>", "New buffer" },
+  },
+}
+
 M.general = {
   i = {
     -- emacs style key mappings
     ["<C-a>"] = { "<ESC>^i", "beginning of line" },
     ["<C-b>"] = { "<Left>", "move left" },
     ["<C-f>"] = { "<Right>", "move right" },
+    ["<C-v>"] = { '<ESC>"+pa', "paste" },
+    ["<D-v>"] = { '<ESC>"+pa', "paste" },
   },
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
@@ -33,7 +41,7 @@ M.general = {
 
 
     ["<leader>bb"] = {
-      "<cmd> Telescope buffers <CR>", "close buffer",
+      "<cmd> Telescope buffers <CR>", "buffers list",
     },
 
     ["<leader><leader>"] = { "<cmd> Telescope find_files follow=true <CR>", "find all" },
@@ -51,6 +59,9 @@ M.general = {
     },
     ["<leader>sp"] = {
       "<cmd> Telescope live_grep <CR>", "Search keyword in project",
+    },
+    ["<leader>sd"] = {
+      "<cmd> Telescope live_grep search_dirs=. <CR>", "Search keyword in project",
     },
 
     ["<leader>sS"] = {
@@ -98,7 +109,9 @@ M.general = {
       end,
       "lsp implementation",
     },
-
+    ["<leader>cs"] = {
+      "<cmd> Telescope lsp_document_symbols <CR>",  "lsp symbols",
+    },
     ["<leader>qq"] = {
       function ()
         local ch = vim.fn.input("Confirm quit? [y/n] ")
