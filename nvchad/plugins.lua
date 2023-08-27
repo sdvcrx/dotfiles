@@ -59,7 +59,25 @@ return {
       },
     },
     opts = overrides.telescope,
-  }
+  },
+  -- Copy from https://github.com/folke/todo-comments.nvim/issues/181#issuecomment-1532161248
+  {
+    "folke/todo-comments.nvim",
+    lazy = false,
+    event = "VeryLazy",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    init = function()
+      require("core.utils").lazy_load "todo-comments.nvim"
+    end,
+    opts = function()
+      return require "custom.configs.todocomments"
+    end,
+    config = function(_, opts)
+      require("todo-comments").setup(opts)
+    end
+  },
   -- ["ray-x/go.nvim"] = {
   --   disable = true,
   --   ft = "go",
