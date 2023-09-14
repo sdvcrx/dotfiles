@@ -166,15 +166,24 @@
  :gi "C-w" #'evil-delete-backward-word
 
  (:when (modulep! :ui tabs)
+  :g [backtab] #'centaur-tabs-backward
   :g "M-h" #'centaur-tabs-backward
+  :n "TAB" #'centaur-tabs-forward
+  :n [tab] #'centaur-tabs-forward
   :g "M-l" #'centaur-tabs-forward)
 
  (:leader
+  :desc "Previous buffer"             "["   #'centaur-tabs-backward
+  :desc "Next buffer"                 "]"   #'centaur-tabs-forward
+
    (:prefix "f"
      :desc "Save buffer" :n "s" #'save-buffer
      :desc "Save all buffers" :n "S" #'evil-write-all)
    (:prefix "b"
-     :desc "Kill buffer" :n "d" #'doom/kill-this-buffer-in-all-windows)
+    (:when (modulep! :ui tabs)
+     :desc "Previous buffer"             "["   #'centaur-tabs-backward
+     :desc "Next buffer"                 "]"   #'centaur-tabs-forward)
+     :desc "Kill buffer"                 "d" #'doom/kill-this-buffer-in-all-windows)
    (:prefix "g"
     :desc "Magit dispatch" :n "m" #'magit-dispatch-popup)
    (:prefix-map ("n" . "notes")
