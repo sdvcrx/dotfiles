@@ -20,6 +20,12 @@
   (setq flycheck-check-syntax-automatically '(mode-enabled save))
   (setq flycheck-idle-change-delay 5))
 
+(after! doom-modeline
+  (remove-hook! doom-modeline-mode
+    #'size-indication-mode
+    #'column-number-mode)
+  (line-number-mode -1))
+
 ;; (after! yasnippet
 ;;   (push "~/.doom.d/templates" yas-snippet-dirs)
 ;;   (set-file-template! "\\.vue$" ':trigger "__.vue" :mode 'web-mode)
@@ -39,6 +45,8 @@
 
  ;; modeline
  doom-modeline-buffer-file-name-style 'relative-to-project
+ doom-modeline-major-mode-icon t
+ doom-modeline-percent-position nil
 
  ;; treemacs theme
  doom-themes-treemacs-theme "doom-colors"
