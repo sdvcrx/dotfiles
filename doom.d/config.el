@@ -145,6 +145,9 @@
 
 (add-hook 'after-change-major-mode-hook #'doom-modeline-conditional-buffer-encoding)
 
+(after! evil-collection-vterm
+  (evil-set-initial-state 'vterm-mode 'emacs))
+
 ;; keybindings
 (map!
  ;; Easier window navigation
