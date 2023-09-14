@@ -96,7 +96,9 @@
  lsp-eslint-auto-fix-on-save t
 
  ;; lsp vue
- lsp-volar-take-over-mode nil
+ ;; lsp-volar-take-over-mode nil
+ lsp-typescript-suggest-auto-imports nil
+ lsp-clients-typescript-log-verbosity nil
 
  ;; lsp typescript
  lsp-clients-typescript-log-verbosity nil
