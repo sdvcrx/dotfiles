@@ -275,6 +275,8 @@
         :i "C-j" #'emmet-next-edit-point
         :i "C-k" #'emmet-prev-edit-point)
 
+  (setq-hook! 'web-mode-hook +format-with-lsp nil)
+
   ;; set vue style/script indent to 0
   (defun custom-web-mode-hook ()
     "Hooks for Web mode."
