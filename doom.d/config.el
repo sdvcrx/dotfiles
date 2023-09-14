@@ -93,6 +93,9 @@
  ;; lsp typescript
  lsp-clients-typescript-log-verbosity nil
 
+ ;; CJK word wrap
+ word-wrap-by-category t
+
  ;; doom
  doom-localleader-key ","
  doom-localleader-alt-key "M-,")
