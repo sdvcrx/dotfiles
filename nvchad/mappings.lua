@@ -17,7 +17,11 @@ M.general = {
     ["<C-v>"] = { '<ESC>"+pa', "paste" },
     ["<D-v>"] = { '<ESC>"+pa', "paste" },
   },
+  c = {
+    ["<D-v>"] = { '<C-r>+', "paste" },
+  },
   n = {
+    ["<D-v>"] = { '<C-r>+', "paste" },
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
 
     ["<leader>bd"] = {
