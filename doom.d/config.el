@@ -123,7 +123,7 @@
 
  ;; doom-serif-font (font-spec :family "IBM Plex Mono" :weight 'light)
  doom-font (font-spec :family "JetBrains Mono" :size font-size)
- doom-unicode-font (font-spec :family "JetBrains Mono"))
+ doom-symbol-font (font-spec :family "JetBrains Mono"))
 
 ;; https://github.com/laishulu/Sarasa-Term-SC-Nerd
 (when (doom-font-exists-p "Sarasa Term SC Nerd")
@@ -131,7 +131,7 @@
    ;; doom-variable-pitch-font (font-spec :family "Sarasa Term SC Nerd")
    doom-variable-pitch-font (font-spec :family "JetBrains Mono")
    doom-big-font (font-spec :family "Sarasa Term SC Nerd" :size (* font-size 1.5))
-   doom-unicode-font (font-spec :family "Sarasa Term SC Nerd")))
+   doom-symbol-font (font-spec :family "Sarasa Term SC Nerd")))
 
 ;; modeline
 ;; Copy from https://tecosaur.github.io/emacs-config/config.html#theme-modeline
