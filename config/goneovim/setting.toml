@@ -1,6 +1,13 @@
+# https://github.com/akiyosi/goneovim/wiki/Usage#configuration
 [Editor]
-FontFamily = "JetBrainsMono Nerd Font"
-FontSize = 16
+BorderlessWindow = true
+HideTitlebar = true
+FontFamily = "JetBrainsMono NFM"
+FontSize = 18
 DisableLigatures = false
 Clipboard = true
 ModeEnablingIME = ["insert"]
+GinitVim = '''
+cd $HOME
+'''
+#SmoothScroll = true
