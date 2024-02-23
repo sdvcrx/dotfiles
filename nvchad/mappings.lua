@@ -75,6 +75,9 @@ M.general = {
     ["<leader>gb"] = {
       "<cmd> Telescope git_branches <CR>", "Git switch branch",
     },
+    ["<leader>gg"] = {
+      "<cmd> Neogit <CR>", "Neogit",
+    },
 
     ["<leader>pp"] = {
       "<cmd> Telescope project <CR>", "Switch projectes",
