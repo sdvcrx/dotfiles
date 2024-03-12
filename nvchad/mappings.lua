@@ -75,8 +75,17 @@ M.general = {
     ["<leader>gb"] = {
       "<cmd> Telescope git_branches <CR>", "Git switch branch",
     },
+    ["<leader>gB"] = {
+      "<cmd> Gitsigns toggle_current_line_blame <CR>", "Git blame current line",
+    },
     ["<leader>gg"] = {
       "<cmd> Neogit <CR>", "Neogit",
+    },
+    ["<leader>gs"] = {
+      "<cmd> Gitsigns stage_hunk <CR>", "Git stage hunk",
+    },
+    ["<leader>gS"] = {
+      "<cmd> Gitsigns stage_buffer <CR>", "Git stage current buffer",
     },
 
     ["<leader>pp"] = {
