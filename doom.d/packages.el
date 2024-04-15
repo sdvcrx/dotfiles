@@ -19,6 +19,10 @@
 (package! protobuf-mode)
 (package! go-impl)
 
+;; LSP
+(unpin! lsp-mode)
+(package! lsp-vtsls :recipe (:host github :repo "sdvcrx/lsp-vtsls"))
+
 ;; org-roam-ui
 (unpin! org-roam)
 (package! websocket)
