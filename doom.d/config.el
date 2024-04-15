@@ -316,6 +316,26 @@
 
   (add-hook! 'web-mode-hook 'custom-web-mode-hook))
 
+(defun +lsp-volar--activate-p-advice (filename &optional _)
+  "Only activate lsp-volar on vue project"
+  (if lsp-volar-take-over-mode
+      (and (or
+           (and (lsp-workspace-root) (lsp-volar--vue-project-p (lsp-workspace-root)))
+           (and (lsp-workspace-root) lsp-volar-activate-file (f-file-p (f-join (lsp-workspace-root) lsp-volar-activate-file))))
+          (or (or (string-match-p "\\.mjs\\|\\.[jt]sx?\\'" filename)
+                  (and (derived-mode-p 'js-mode 'typescript-mode 'typescript-ts-mode)
+                       (not (derived-mode-p 'json-mode))))
+              (string= (file-name-extension filename) "vue")))
+    (string= (file-name-extension filename) "vue")))
+
+(after! lsp-volar
+  (advice-add 'lsp-volar--activate-p :override #'+lsp-volar--activate-p-advice)
+
+  ;; https://github.com/emacs-lsp/lsp-mode/issues/4313
+  (lsp-dependency 'typescript
+                  '(:npm :package "typescript"
+                    :path "tsserver")))
+
 (after! lsp-mode
   ;; https://github.com/emacs-lsp/lsp-mode/issues/3577
   (delete 'lsp-terraform lsp-client-packages))
