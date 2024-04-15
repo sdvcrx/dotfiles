@@ -83,23 +83,32 @@
  ;; don't show lsp completion with yasnippet
  +lsp-company-backends 'company-capf
 
+ ;; LSP debug
+ ;; lsp-log-io t
+
  ;; lsp-ui
  lsp-ui-sideline-enable nil
  lsp-ui-sideline-show-hover nil
+ lsp-lens-enable nil
+ lsp-modeline-code-actions-enable nil
+ ;; show lsp-ui-doc on mouseover
+ lsp-ui-doc-show-with-mouse t
 
- ;; doc
- ;; lsp-ui-doc-enable nil
- lsp-ui-doc-show-with-cursor nil
- ;; lsp-ui-doc-show-with-mouse nil
+ lsp-modeline-diagnostics-enable nil
+ ;; ;; disable API doc
+ ;; lsp-signature-render-documentation nil
 
  ;; lsp-eslint
  lsp-eslint-run "onSave"
  lsp-eslint-auto-fix-on-save t
 
  ;; lsp vue
- ;; lsp-volar-take-over-mode nil
  lsp-typescript-suggest-auto-imports nil
  lsp-clients-typescript-log-verbosity nil
+
+ lsp-volar-take-over-mode t
+
+ ;; lsp-enable-indentation nil
 
  ;; lsp typescript
  lsp-clients-typescript-log-verbosity nil
@@ -306,3 +315,7 @@
       (custom-web-mode-hook)))
 
   (add-hook! 'web-mode-hook 'custom-web-mode-hook))
+
+(after! lsp-mode
+  ;; https://github.com/emacs-lsp/lsp-mode/issues/3577
+  (delete 'lsp-terraform lsp-client-packages))
