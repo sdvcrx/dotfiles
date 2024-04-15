@@ -15,6 +15,12 @@
    company-idle-delay 0.3
    company-minimum-prefix-length 3))
 
+(after! corfu
+  (setq-default
+   corfu-auto-delay 0.3
+   corfu-auto-prefix 3
+   corfu-preselect 'directory))
+
 ;; flycheck
 (after! flycheck
   ;; https://www.flycheck.org/en/latest/user/syntax-checks.html#variable-flycheck-check-syntax-automatically
