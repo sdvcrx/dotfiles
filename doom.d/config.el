@@ -343,5 +343,6 @@
                     :path "tsserver")))
 
 (after! lsp-mode
+  (add-to-list 'lsp--formatting-indent-alist '(web-mode . web-mode-indent-style))
   ;; https://github.com/emacs-lsp/lsp-mode/issues/3577
   (delete 'lsp-terraform lsp-client-packages))
