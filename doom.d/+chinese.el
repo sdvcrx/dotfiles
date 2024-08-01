@@ -12,4 +12,12 @@
      rime-predicate-in-code-string-p
      rime-predicate-prog-in-code-p))
   (rime-inline-ascii-trigger 'shift-l)
-  (rime-user-data-dir "~/.local/share/fcitx5/rime"))
+  (rime-user-data-dir "~/.local/share/rime"))
+
+(after! rime
+  (when (featurep :system 'macos)
+    (setq
+     ;; https://github.com/rime/librime/releases
+     rime-librime-root "~/.local/share/librime/"
+     ;; https://github.com/DogLooksGood/emacs-rime/blob/master/INSTALLATION.org
+     rime-emacs-module-header-root "/opt/homebrew/include/")))
