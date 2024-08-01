@@ -17,6 +17,7 @@
 
 (after! corfu
   (setq-default
+   +corfu-want-tab-prefer-navigating-org-tables t
    corfu-auto-delay 0.3
    corfu-auto-prefix 3
    corfu-preselect 'directory))
