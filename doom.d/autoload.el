@@ -29,3 +29,12 @@
   (require 'org)
   (+default/search-project-for-symbol-at-point
    query org-roam-directory))
+
+;;;###autoload
+(defun set-lsp-add-on! (client add-on?)
+  "Change the add-on? of lsp CLIENT."
+  (require 'lsp-mode)
+  (if-let (client (gethash client lsp-clients))
+      (setf (lsp--client-add-on? client)
+            add-on?)
+    (error "No LSP client named %S" client)))
