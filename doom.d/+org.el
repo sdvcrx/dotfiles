@@ -93,3 +93,14 @@
        "(\\1-\\2-\\3) "
        (subst-char-in-string ?_ ?  buffer-file-name))
     (funcall orig-fun)))
+
+;; https://hieuphay.com/doom-emacs-config/#kind-icon-configurations
+(after! org-roam
+  ;; Define advise
+  (defun hp/org-roam-capf-add-kind-property (orig-fun &rest args)
+    "Advice around `org-roam-complete-link-at-point' to add :company-kind property."
+    (let ((result (apply orig-fun args)))
+      (append result '(:company-kind (lambda (_) 'org-roam)))))
+  ;; Wraps around the relevant functions
+  (advice-add 'org-roam-complete-link-at-point :around #'hp/org-roam-capf-add-kind-property)
+  (advice-add 'org-roam-complete-everywhere :around #'hp/org-roam-capf-add-kind-property))
