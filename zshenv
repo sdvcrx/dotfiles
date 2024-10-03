@@ -9,7 +9,9 @@ export GIT_EDITOR="vim"
 
 # man pager
 # export MANPAGER="nvim -c 'set ft=man' -"
+# https://github.com/sharkdp/bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p --paging auto'"
+export MANROFFOPT="-c"
 
 # export GEM_PATH=$HOME/.gem/ruby/2.6.0
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:$HOME/bin/:$GOPATH/bin:$HOME/.emacs.d/bin
