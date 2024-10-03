@@ -117,6 +117,9 @@
 
  ;; lsp-enable-indentation nil
 
+ ;; https://emacs-lsp.github.io/lsp-mode/page/performance/#use-plists-for-deserialization
+ lsp-use-plists t
+
  ;; lsp typescript
  lsp-clients-typescript-log-verbosity nil
 
