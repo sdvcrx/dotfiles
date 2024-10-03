@@ -6,10 +6,10 @@ bindkey "^n" down-line-or-search
 ###
 # Alias
 ###
-alias ll='exa -l'
-alias ls='exa'
-alias la='exa -al'
-alias l='exa'
+alias ll='eza -l'
+alias ls='eza'
+alias la='eza -al'
+alias l='eza'
 
 alias grep='grep -i --color=auto'
 alias egrep='grep -E --color=auto'
