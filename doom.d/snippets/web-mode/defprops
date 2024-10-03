@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: defineProps
+# key: defprops
+# condition: (equal web-mode-engine "vue")
+# --
+const props = defineProps<$0>();
