@@ -7,7 +7,7 @@ return {
     event = "InsertEnter",
     config = function()
       require("better_escape").setup {
-        mapping = { "jj" }, -- map jj to ESC
+        default_mappings = true,
         timeout = 300,
       }
     end,
