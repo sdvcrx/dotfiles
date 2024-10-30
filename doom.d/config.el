@@ -71,7 +71,11 @@
  centaur-tabs-style "bar"
  centaur-tabs-modified-marker "•"
 
+ ;; ligatures
  +ligatures-extras-in-modes '(org-mode)
+
+ ;; org-roam
+ org-roam-database-connector 'sqlite-builtin
 
  ;; evil
  ;; map jj to <ESC>
