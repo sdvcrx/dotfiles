@@ -74,9 +74,6 @@
  ;; ligatures
  +ligatures-extras-in-modes '(org-mode)
 
- ;; org-roam
- org-roam-database-connector 'sqlite-builtin
-
  ;; evil
  ;; map jj to <ESC>
  evil-escape-key-sequence "jj"

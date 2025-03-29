@@ -25,6 +25,7 @@
 (package! lsp-vtsls :recipe (:host github :repo "sdvcrx/lsp-vtsls"))
 
 ;; org-roam-ui
+(unpin! emacsql)
 (unpin! org-roam)
 (package! websocket)
 (package! org-roam-ui :recipe (:host github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
