@@ -155,7 +155,7 @@
    doom-symbol-font (font-spec :family "Sarasa Term SC Nerd")))
 
 ;; modeline
-;; Copy from https://tecosaur.github.io/emacs-config/config.html#theme-modeline
+;; Copy from https://tecosaur.github.io/emacs-config/config.html#file-encoding
 (defun doom-modeline-conditional-buffer-encoding ()
   "We expect the encoding to be LF UTF-8, so only show the modeline when this is not the case"
   (setq-local doom-modeline-buffer-encoding
@@ -260,7 +260,7 @@
 
 (after! magit
   (setq
-   magit-process-finish-apply-ansi-colors t
+   magit-process-apply-ansi-colors t
    magit-section-initial-visibility-alist '((untracked . hide) (stashes . hide))))
 
 (after! projectile
