@@ -55,6 +55,8 @@
  doom-modeline-buffer-file-name-style 'relative-to-project
  doom-modeline-major-mode-icon t
  doom-modeline-percent-position nil
+ doom-modeline-time nil
+ doom-modeline-env-version nil
 
  ;; treemacs theme
  doom-themes-treemacs-theme "doom-colors"
