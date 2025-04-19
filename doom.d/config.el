@@ -282,6 +282,7 @@
     (add-hook 'before-save-hook #'lsp-organize-imports nil 'local))
 
   (setq
+   lsp-go-use-gofumpt t
    lsp-gopls-hover-kind "SingleLine"
    lsp-gopls-codelens nil
    lsp-gopls-use-placeholders nil)
