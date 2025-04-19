@@ -13,7 +13,7 @@
 (package! org-ol-tree :recipe (:host github :repo "Townk/org-ol-tree"))
 
 ;; https://github.com/tecosaur/screenshot/issues/11
-(package! screenshot :recipe (:host github :repo "tecosaur/screenshot" :build (:not compile)))
+(package! screenshot :recipe (:host github :repo "tecosaur/screenshot"))
 
 (package! wakatime-mode)
 
