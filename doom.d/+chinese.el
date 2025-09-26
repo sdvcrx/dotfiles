@@ -15,6 +15,8 @@
   (rime-user-data-dir "~/.local/share/rime"))
 
 (after! rime
+  (map! :map rime-mode-map
+        "C-`" #'rime-send-keybinding)
   (when (featurep :system 'macos)
     (setq
      ;; https://github.com/rime/librime/releases
