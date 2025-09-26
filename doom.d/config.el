@@ -213,6 +213,10 @@
       )))
    :desc "Org roam" "r" (general-simulate-key "SPC n r")))
 
+(after! dirvish
+  (map! :map dirvish-mode-map
+        :n "c" #'dired-create-empty-file))
+
 (after! centaur-tabs
   (defun centaur-tabs-hide-tab (x)
     "Do no to show buffer X in tabs."
