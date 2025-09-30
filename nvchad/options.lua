@@ -1,3 +1,5 @@
+require "nvchad.options"
+
 local opt = vim.opt
 local opt_local = vim.opt_local
 local autocmd = vim.api.nvim_create_autocmd

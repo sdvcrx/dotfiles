@@ -2,7 +2,7 @@
 
 ## Install
 
-Install [nvchad](https://nvchad.github.io/) first:
+Install [nvchad](https://nvchad.com/docs/quickstart/install) first:
 
 ``` bash
 # deps
@@ -10,7 +10,7 @@ sudo pacman -S ripgrep lua-language-server neovim
 # [optional] GUI
 sudo pacman -S goneovim-bin
 
-git clone https://github.com/NvChad/NvChad ~/.config/nvim && nvim
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 ```
 
 ## Usage

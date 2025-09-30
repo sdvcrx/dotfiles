@@ -1,32 +1,44 @@
+local theme = require "telescope.themes"
+
 local M = {}
 
-M.telescope = {
-  defaults = {
-    layout_config = {
-      preview_cutoff = 3000,
-    },
-    mappings = {
-      i = {
-        ["<esc>"] = function (prompt_bufnr)
-          require("telescope.actions").close(prompt_bufnr)
-        end,
-        ["<C-u>"] = false,
-        ["<C-j>"] = function (prompt_bufnr)
-          require("telescope.actions").move_selection_next(prompt_bufnr)
-        end,
-        ["<C-k>"] = function (prompt_bufnr)
-          require("telescope.actions").move_selection_previous(prompt_bufnr)
-        end,
-      }
+local ivy_theme = theme.get_ivy {
+  layout_config = {
+    preview_cutoff = 3000,
+  },
+  mappings = {
+    i = {
+      ["<esc>"] = function(prompt_bufnr)
+        require("telescope.actions").close(prompt_bufnr)
+      end,
+      ["<C-u>"] = false,
+      ["<C-j>"] = function(prompt_bufnr)
+        require("telescope.actions").move_selection_next(prompt_bufnr)
+      end,
+      ["<C-k>"] = function(prompt_bufnr)
+        require("telescope.actions").move_selection_previous(prompt_bufnr)
+      end,
     },
   },
+}
+
+M.telescope = {
+  defaults = ivy_theme,
   extensions = {
-    fzf = {
-      fuzzy = true, -- false will only do exact matching
-      override_generic_sorter = false,
-      override_file_sorter = true,
-      case_mode = "smart_case",
+    extensions = {
+      workspaces = {
+        -- keep insert mode after selection in the picker, default is false
+        keep_insert = true,
+        -- Highlight group used for the path in the picker, default is "String"
+        path_hl = "String"
+      }
     },
+    -- fzf = {
+    --   fuzzy = true, -- false will only do exact matching
+    --   override_generic_sorter = false,
+    --   override_file_sorter = true,
+    --   case_mode = "smart_case",
+    -- },
   },
   pickers = {
     buffers = {
@@ -47,7 +59,7 @@ M.telescope = {
   extensions_list = { "themes", "terms", "project", "fzf" },
 }
 
--- https://github.com/williamboman/mason.nvim/blob/main/PACKAGES.md
+-- https://mason-registry.dev/registry/list
 M.mason = {
   ensure_installed = {
     -- shell
@@ -66,15 +78,25 @@ M.mason = {
     "typescript-language-server",
     "json-lsp",
     "vue-language-server",
+    "vtsls",
 
     -- golang
     --"gopls",
+    --"gofumpt",
+    --"goimports",
   },
 }
 
 M.treesitter = {
   indent = {
     enable = true,
+    disable = {
+      "python",
+      "javascript",
+      "typescript",
+      "tsx",
+      "json",
+    },
   },
   -- https://github.com/nvim-treesitter/nvim-treesitter#supported-languages
   ensure_installed = {
@@ -95,16 +117,25 @@ M.treesitter = {
     "javascript",
     "typescript",
     "tsx",
+
+    -- config
     "json",
+    "yaml",
+
+    -- sql
+    "sql",
 
     -- golang
     "go",
+    "gomod",
+    "gowork",
+    "gosum",
   },
 }
 
 M.cmp = {
   completion = {
-    completeopt = 'menu,menuone,noinsert',
+    completeopt = "menu,menuone,noinsert",
     keyword_length = 2,
   },
   sources = {
@@ -112,7 +143,7 @@ M.cmp = {
     { name = "buffer" },
     { name = "luasnip", max_item_count = 4 },
     { name = "nvim_lua" },
-    { name = "path" },
+    { name = "async_path" },
   },
 }
 
