@@ -51,6 +51,19 @@
     '(outline-9 :weight semi-bold))
   (setq org-fontify-quote-and-verse-blocks t)
 
+  ;; extra languages for src blocks
+  (dolist (item '(("el" . "src emacs-lisp")
+                  ("js" . "src javascript")
+                  ("ts" . "src typescript")
+                  ("py" . "src python")
+                  ("sh" . "src shell")))
+    (add-to-list 'org-structure-template-alist item))
+
+  ;; Work related
+  (dolist (item '(("gitlabmr" . "https://git.sysop.bigo.sg/zhixu/global-oss-front.bigo.tv/-/merge_requests/%s")
+                  ("zendao" . "http://zendao.bigo.tv:88/story-view-%s.html")))
+    (add-to-list 'org-link-abbrev-alist item))
+
   (add-to-list 'org-capture-templates
                '("w" "Work todo" entry
                  (file+headline "work.org" "Inbox")
