@@ -1,0 +1,14 @@
+# https://github.com/altsem/gitu/blob/master/src/default_config.toml
+[general]
+confirm_quit.enabled = true
+collapsed_sections = ["untracked", "stashes"]
+mouse_support = true
+
+[bindings]
+root.discard = ["x"]
+root.move_prev_section = ["alt+k", "alt+up", "K"]
+root.move_next_section = ["alt+j", "alt+down", "J"]
+root.move_parent_section = ["alt+h", "alt+left", "H"]
+
+branch_menu.checkout = ["l"]
+branch_menu.delete = ["x"]
