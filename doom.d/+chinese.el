@@ -22,4 +22,4 @@
      ;; https://github.com/rime/librime/releases
      rime-librime-root "~/.local/share/librime/"
      ;; https://github.com/DogLooksGood/emacs-rime/blob/master/INSTALLATION.org
-     rime-emacs-module-header-root "/opt/homebrew/include/")))
+     rime-emacs-module-header-root "/Applications/Emacs.app/Contents/Resources/include")))
